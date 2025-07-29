@@ -1,0 +1,695 @@
+@import './styles.css';
+
+body.menuflex #page, .has_dock.empty-region-side-post #region-main {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body.menuflex #page .tw-containerCourse-enrolmentBanner.alert.alert-info.alert-with-icon {
+    width: 80%;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+body.menuflex .course-content ul.topics {
+    padding-left: 64px;
+    padding-top: 2em;
+}
+
+/* Ancho por defecto del ul.topics */
+body.menuflex .course-content ul.topics, body.menuflex .programa .frame-5 {
+    width: 75%;
+}
+
+body.menuflex #block-region-side-post {
+    position: absolute;
+    right: 0;
+    top: 755px;
+    margin-right: 5px;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-color: var(--dl-graygraph) var(--dl-background);
+}
+
+body.menuflex #page {
+    min-height: calc(100vh + 700px);
+}
+
+body.menuflex #dock {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+body.menuflex.editing #block-region-side-post {
+    top: 940px;
+}
+
+#block-region-side-post, .topics {
+    transition: width 0.5s, display 0.5s;
+}
+
+body.menuflex.empty-region-side-post .course-content ul.topics {
+    width: 100%;
+    padding-right: 187px;
+}
+
+body.menuflex.empty-region-side-post .frame-5 {
+    width: 75%;
+}
+
+body.dl-dark-mode.menuflex.empty-region-side-post #dock {
+    margin-right: 1px;
+    box-sizing: content-box;
+    padding-right: 5px;
+}
+
+body.dl-dark-mode.menuflex.empty-region-side-post #dock .dockeditem {
+    padding-right: 25px;
+}
+
+/*Barra de porciento de curso*/
+body.menuflex .description-course .group-wrapper {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+body.menuflex .description-course .group-2 {
+    position: relative;
+    height: 39px;
+}
+
+body.menuflex .description-course .progress-bar {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    position: absolute;
+    left: 0;
+}
+
+body.menuflex .description-course .bar-circle {
+    height: 8px;
+    gap: 10px;
+    flex: 1;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff80;
+}
+
+body.menuflex .description-course .active-bar {
+    position: relative;
+    width: 539px;
+    height: 10px;
+    margin-top: -1.00px;
+    margin-bottom: -1.00px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18.4px 2px #75e06380;
+    background: linear-gradient(180deg, rgb(43, 182, 115) 0%, rgb(153, 204, 255) 100%);
+}
+
+body.menuflex .description-course .text-BG {
+    display: flex;
+    flex-direction: column;
+    width: 47px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px;
+    position: absolute;
+    top: 0;
+    left: 519px;
+    background-color: #0c0a9a;
+    border-radius: 18px;
+}
+
+body.menuflex .description-course .text {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+body.menuflex .description-course .text-wrapper-7 {
+    font-family: 'Inter-SemiBold', Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 0;
+}
+
+body.menuflex .description-course .polygon {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 19px;
+    left: 14px;
+}
+
+body.menuflex .description-course .times-course-holder {
+    margin-top: 10px;
+}
+
+/* Section style*/
+body.menuflex .course-content > ul.topics > li.section.main > div.content .sectionname span {
+    font-family: 'Roboto-Bold';
+    font-size: 24px;
+    line-height: 24px;
+    color: #ff4848;
+}
+
+body.menuflex .course-content > ul.topics .inplaceeditable.inplaceeditingon {
+    margin-top: 36px;
+}
+
+body.menuflex .course-content > ul.topics .inplaceeditable.inplaceeditingon > span.editinstructions {
+    font-size: 12px !important;
+}
+
+body.menuflex .course-content > ul.topics span.section-modchooser-text {
+    color: #ff4848;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li {
+    border-top: none;
+    background: transparent;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main.clearfix {
+    border-bottom: 1px solid #201e3f;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li .mod-indent-outer > div:last-child {
+    padding: 12px 15px 12px 16px;
+    background: #3a376f;
+    border-radius: 28.66px;
+    /* height: 96px; */
+    width: 98%;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li .mod-indent-outer:has(input.completion-icon:checked) > div:last-child {
+    opacity: 0.5;
+}
+
+.section .activity .activityinstance, .section .activity .activityinstance {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center
+}
+
+.section .activity .activityinstance, .section .activity .activityinstance span.flex-icon.activityicon {
+    color: #ffffff;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text .actions {
+    margin-left: auto;
+}
+
+.section .activity .activityinstance, .section .activity .activityinstance div {
+    height: 100%;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li .activityinstance > a:nth-child(1) {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    min-height: 72px;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li .activityinstance > a.go-to-activity {
+    height: 32px;
+    width: 64px;
+    text-align: center;
+    align-content: center;
+    display: block;
+    border-radius: 23px;
+    border: unset;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li .instancename {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    width: 450px;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text .actions input ~ .checkmark,
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text .actions .autocompletion > span[data-flex-icon="core|i/completion-auto-n"] {
+    background: transparent;
+    border-color: #9699B3;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text .actions input ~ .checkmark,
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text .actions .autocompletion > span[data-flex-icon="core|i/completion-auto-n"] {
+    background: transparent;
+    border-color: #9699B3;
+    color: #ffffff;
+    border: 2px solid #9699B3;
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text .actions input:checked ~ .checkmark, body.menuflex span.ft-state-success {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: var(--dl-background);
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text .actions input:checked ~ .checkmark::after {
+    border-color: var(--dl-primary);
+}
+
+body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li .activityinstance > a > :first-child {
+    padding: 0;
+}
+
+
+body.menuflex .course-content .activityinstance .flex-icon {
+    font-size: 24px;
+}
+
+/* Estilo para el botón colapsable */
+body.menuflex .course-content .activityinstance .collapsible {
+    font-size: 14px;
+    font-family: 'Roboto-Medium', sans-serif;
+    line-height: 24px;
+    color: #ffffff;
+    margin-left: 25px;
+    display: block;
+    text-align: left;
+    padding: 18px;
+    width: 100%;
+}
+
+/* Estilo para el botón al estar activo o al pasarle el cursor */
+body.menuflex .course-content .activityinstance .collapsible.active, body.menuflex .course-content .activityinstance .collapsible:hover {
+    background-color: transparent;
+    cursor: pointer;
+    text-underline: none;
+
+}
+
+body.menuflex .course-content .activityinstance .collapsible.active {
+    /* Propio para la animación de desplazamiento */
+    transition: transform 0.3s ease;
+    /* transform: translate(0, -20px); */
+    /* width: 15% */
+}
+
+/* Estilo para el contenedor del contenido colapsable */
+body.menuflex .course-content .activityinstance .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    /* Aseguramos que el texto se alinee a la izquierda */
+    text-align: left;
+
+    /* Propio para la animación de desplazamiento */
+    transition: transform 0.1s ease;
+    transform: translateY(0);
+    width: 100%;
+}
+
+body.menuflex .course-content ul.topics li.section .content {
+    margin: 0;
+}
+
+/* Clase que se aplicará cuando el contenido esté visible */
+body.menuflex .course-content .activityinstance .content.expanded {
+    /* Se genera el efecto de desplazamiento 20px hacia arriba */
+    /* transform: translate(-110px, 25px); */
+}
+
+body.menuflex .course-content .activityinstance a {
+    text-decoration: none;
+}
+
+body.menuflex .course-content .activityinstance a.collapsible span.icon-toggle {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* Propio para la animación de desplazamiento */
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+body.menuflex .course-content .activityinstance a.collapsible span.icon-text {
+    margin-left: 10px;
+}
+
+div.availabilityinfo strong a {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+body.dl-dark-mode.catalog .container-fluid {
+    padding: var(--gap-3) 0;
+}
+
+
+body.dl-dark-mode.catalog .totaraNav .container-fluid {
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+body.catalog .totaraNav ul {
+    /* background: none; */
+}
+
+body.catalog .totaraNav nav.totaraNav_prim {
+    background: linear-gradient(to bottom,
+    var(--dl-background) 0%,
+    transparent 100%);
+}
+
+body.catalog .totaraNav nav.totaraNav_sub {
+    background: transparent;
+    display: none;
+}
+
+body.catalog .totaraNav_prim--list_item .totaraNav_prim--list_item_link,
+body.catalog .totaraNav_prim--side span.flex-icon::before,
+body.catalog .totaraNav_prim--side .usermenu .toggle-display {
+    color: #ffffff;
+    opacity: 1;
+}
+
+body.catalog .totaraNav_prim--side .moodle-actionmenu span.flex-icon::before,
+body.catalog .totaraNav_prim--side #quickaccess-popover-content span.flex-icon::before {
+    color: #000000;
+    opacity: 0.3;
+}
+
+body.catalog .tui-dlCourseCarousel.slide {
+    margin-right: -16px;
+    margin-left: -32px;
+    margin-top: -45px;
+}
+
+body.menuflex .info-course {
+    position: relative;
+    width: 100%;
+    height: 647px; /* Puedes ajustar la altura según tus necesidades */
+    overflow: hidden;
+}
+
+body.menuflex .image-course-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    max-height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, #06032f 100%),
+    linear-gradient(to right, #06032f 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+body.menuflex .image-course {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Para que la imagen ocupe toda la div sin deformarse */
+}
+
+
+body.menuflex .description-course {
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 75%;
+    background: transparent;
+    color: white;
+    padding: 10px 30px 10px 64px;
+    box-sizing: border-box;
+    white-space: normal;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+body.menuflex .description-course .summary {
+    width: 90%;
+}
+
+body.menuflex .activity-container {
+    display: flex;
+    align-items: center;
+}
+
+body.menuflex .activity-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+body.menuflex .activity-button:hover {
+    background-color: #0056b3;
+}
+
+body.menuflex div#block-region-side-post .block .block-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+body.menuflex .fullname-course {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 3.64em;
+    line-height: 1.1em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    white-space: normal;
+}
+
+
+/*EDIT view*/
+body.editing.dl-dark-mode li.activity.scorm.modtype_scorm {
+    background-color: transparent;
+}
+
+body.editing.dl-dark-mode .section .activity .commands a,
+body.editing.dl-dark-mode ul.menubar a {
+    color: #ff4848;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+body.editing.dl-dark-mode .tfont-var-arrows-move:before {
+    color: #ff4848;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+body.dl-dark-mode.menuflex .choosercontainer #chooseform .options {
+    color: var(--dl-background);
+}
+
+/* Message view */
+#page-message-index .searchtextarea {
+    background-color: var(--dl-background);
+}
+
+#page-message-index .searchtextarea input {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.50) !important;
+    resize: none;
+    background: transparent;
+    color: #FFF;
+}
+
+#page-message-index .tabs .tabconversations,
+#page-message-index .tabs .tabcontacts {
+    background-color: var(--dl-background);
+    color: #FFF;
+}
+
+/* end Message view */
+
+/* Private Files view */
+#page-user-files .fp-btn-add a,
+#page-user-files .fp-btn-mkdir a,
+#page-user-files .fp-btn-download a,
+#page-user-files .fp-viewbar a {
+    background-color: var(--dl-background);
+}
+
+#page-user-files #fitem_id_files_filemanager .fp-pathbar .fp-path-folder a {
+    color: var(--dl-graygraph);
+}
+
+/* End private files */
+
+/* User preferences view*/
+#page-user-preferences .preferences-groups a {
+    color: var(--dl-graygraph);
+}
+
+/* End user preferences view */
+
+/* Competenci details view */
+#page-totara-competency-profile-details-index #region-main a {
+    color: #ff4848;
+}
+
+#page-totara-competency-profile-details-index #region-main button {
+    border-radius: 4px;
+    background: var(--Blanco, #FFF);
+    color: rgba(20, 10, 154, 1);
+}
+
+#page-totara-competency-profile-details-index .tui-competencyDetailAssignment__bar,
+#page-totara-competency-profile-details-index .tui-grid-item select {
+    background: var(--dl-background);
+}
+
+#page-totara-competency-profile-details-index div.tui-grid-item.tui-competencyDetailAssignment__status,
+#page-totara-competency-profile-details-index div.tui-grid-item.tui-competencyDetailAssignment__level,
+#page-totara-competency-profile-details-index .tui-competencyAchievementsScale__item {
+    color: #FFF;
+}
+
+#page-totara-competency-profile-details-index div.tui-collapsible__header,
+#page-totara-competency-profile-details-index .tui-dataTableRow--expanded {
+    background: var(--dl-background);
+}
+
+#page-totara-competency-profile-details-index .tui-dataTableExpandableRow a {
+    border-radius: 4px;
+    background: var(--Blanco, #FFF);
+    color: var(--dl-principal) !important;
+}
+
+#page-totara-competency-profile-details-index .tui-progressCircle span {
+    color: var(--dl-principal) !important;
+}
+
+#page-totara-competency-profile-details-index div.tui-collapsible__header svg {
+    color: #FFF;
+}
+
+#page-totara-competency-profile-details-index .tui-dataTableRow.tui-focusWithin, .tui-dataTableRow:active, .tui-dataTableRow:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    background: var(--dl-background);
+}
+
+#page-totara-competency-profile-details-index .tui-dataTableExpandableRow__content {
+    background: var(--dl-background);
+    color: #FFF;
+}
+
+#page-totara-competency-profile-details-index .totaraNav_sub {
+    display: none;
+}
+
+/* End competency details view */
+
+/* Responsive */
+@media (max-width: 1024px) {
+    body.menuflex #page .description-course,
+    body.menuflex .course-content ul.topics {
+        padding-left: 10px;
+    }
+
+    body.menuflex #page .description-course {
+        font-size: 6px;
+    }
+
+    body.menuflex .course-content ul.topics
+        /* --body.menuflex .programa .frame-5  */
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991.86px) {
+    body.dl-dark-mode.catalog .totaraNav .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    body.dl-dark-mode.catalog .totaraNav_prim--list_item .totaraNav_prim--list_item_link {
+        color: #000000;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 767.86px) {
+    body.menuflex .image-course {
+        height: 252px;
+    }
+
+    body.menuflex .info-course {
+        position: relative;
+        width: 100%;
+        height: 400px; /* Puedes ajustar la altura según tus necesidades */
+        overflow: hidden;
+    }
+
+    body.menuflex .description-course .summary {
+        max-height: 184px;
+        overflow: hidden;
+    }
+
+    body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li .activityinstance > a.go-to-activity {
+        height: 32px;
+        width: 64px;
+        text-align: center;
+        align-content: center;
+        display: block;
+        border-radius: 23px;
+    }
+
+    body.menuflex .description-course {
+        width: 100%;
+    }
+
+    body.menuflex .description-course .group-wrapper {
+        padding: 0 20px;
+    }
+
+    body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li .instancename {
+        width: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+    body.menuflex .course-content > ul.topics > li.section.main > div.content .section.img-text > li .activityinstance > a.go-to-activity {
+        width: 100%;
+    }
+}
+
+/* End Responsive */

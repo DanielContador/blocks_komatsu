@@ -1,0 +1,42 @@
+@import './styles.css';
+
+/*body.dl-dark-mode div.container-fluid.breadcrumb-container{
+    margin-top: 0;
+}*/
+
+/*body.dl-dark-mode.coursescategory .container-fluid {
+    padding: var(--gap-3) 0;
+}*/
+
+
+body.dl-dark-mode.coursescategory .totaraNav .container-fluid{
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+body.coursescategory .totaraNav ul{
+    background: none;
+}
+
+body.coursescategory .totaraNav nav.totaraNav_prim {
+    background: linear-gradient(to bottom,
+    var(--dl-background) 0%,
+    transparent 100%);
+}
+
+body.coursescategory .totaraNav nav.totaraNav_sub {
+    background: transparent;
+    display: none;
+}
+
+body.coursescategory .totaraNav_prim--list_item .totaraNav_prim--list_item_link, body.coursescategory .totaraNav_prim--side span.flex-icon::before,
+body.coursescategory .totaraNav_prim--side .usermenu .toggle-display{
+    color: #ffffff;
+    opacity: 1;
+}
+
+body.coursescategory .tui-dlCourseCarousel.slide {
+    margin-right: -16px;
+    margin-left: -32px;
+    margin-top: -45px;
+}

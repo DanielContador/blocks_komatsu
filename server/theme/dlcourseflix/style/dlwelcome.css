@@ -1,0 +1,14 @@
+body.dl-dark-mode div.block_dlwelcome{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 728px;
+}
+
+body.dl-dark-mode div.block_dlwelcome .d-flex.d-flex-wrap{
+    height: 100%;
+}
+
+body.dl-dark-mode div.block_dlwelcome .d-flex.d-flex-wrap .box1{
+    margin: 10% 5%;
+}

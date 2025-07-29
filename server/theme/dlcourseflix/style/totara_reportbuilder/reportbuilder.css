@@ -1,0 +1,137 @@
+body {
+    overflow-x: hidden !important;
+}
+
+.mform a, .mform legend, .mform label, .mform span, .ui-dialog-content label {
+    color: rgba(255, 255, 255, 0.50) !important;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto;
+    /*font-size: 18px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.felement select {
+    padding: 0px 12px !important;
+    align-items: center;
+    gap: 10px;
+    border-radius: 11px;
+    background: #838197 !important;
+    color: #FFF !important;
+    appearance: auto !important;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.felement input, .rb-showhide form input {
+    padding: 8px 12px;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--dl-principal2, #FFF);
+    color: var(--dl-principal, #140A9A);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    /*font-weight: 700;*/
+    line-height: normal;
+}
+
+.totara-dialog, .ui-dialog-titlebar, .ui-dialog-content, .ui-dialog-buttonpane {
+    background: var(--dl-background);
+}
+
+#page-totara-reportbuilder-report {
+    scrollbar-color: rgb(81 79 110) var(--dl-background);
+}
+
+.moodle-dialogue-wrap {
+    background-color: var(--dl-background) !important;
+    color: var(--dl-graygraph);
+}
+
+.moodle-dialogue-hd {
+    color: #FFF !important;
+}
+
+.totaratable thead, .totaratable thead a {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+}
+
+.totaratable tbody, .totaratable tbody a {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+.totaratable tbody a {
+    color: #ff4848 !important;
+}
+
+#dialog-tabs {
+    background: var(--dl-background);
+}
+
+#dialog-tabs a, #dialog-tabs .last {
+    color: #FFF;
+    background: var(--dl-background);
+}
+
+#dialog-tabs .nav {
+    background: var(--dl-background);
+}
+
+.ui-dialog-content .selected a, .ui-dialog-content .selected {
+    color: #FFF;
+}
+
+.ui-dialog-content .deletebutton {
+    filter: invert(1);
+}
+
+#dialog-tabs .tabs li.ui-state-active a {
+    cursor: default;
+    top: 1px;
+    background-color: var(--dl-graygraph);
+    color: #FFF;
+}
+
+#dialog-tabs .tabs li.ui-state-active a:hover, #dialog-tabs .tabs li.ui-state-active a:focus {
+    background-color: var(--dl-principal);
+    top: 1px;
+}
+
+#dialog-tabs .tabs li.ui-state-active a::after {
+    background: none;
+}
+
+#dialog-tabs .ui-tabs-anchor:hover {
+    background: var(--dl-graygraph);
+}
+
+#dialog-tabs .hitarea {
+    filter: invert(1);
+}
+
+.paging a {
+    color: #ffc82f;
+}
+
+.paging a:hover, .paging a:focus {
+    color: #ffc82f;
+    opacity: 0.8;
+}

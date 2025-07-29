@@ -1,0 +1,124 @@
+<body>
+<div class="programa">
+    <div class="group"></div>
+    <div class="overlap">
+        <div class="rectangle" style="background-image: url('{{programImage}}')">
+            <div class="dl-gradient-overlay"></div>
+        </div>
+
+        <div class="frame-2">
+            <div class="frame-3">
+                <div class="div-wrapper"><p class="p">{{fullName}}</p></div>
+                <div class="frame-4">
+                    <p class="text-wrapper-6">Fecha asignada: {{startDate}}</p>
+                    <p class="text-wrapper-6">Fecha de vencimiento: {{dueDate}}</p>
+                </div>
+                <div class="group-wrapper">
+                    <div class="group-2">
+                        <div class="element-progress-bar">
+                            <div class="bar-circle">
+                                <div class="active-bar" style="width: {{programPercent}}%"></div>
+                            </div>
+                        </div>
+                        <div class="text-BG">
+                            <div class="text">
+                                <div class="text-wrapper-7">{{programPercent}}%</div>
+                            </div>
+                            <img class="polygon" src="/theme/dlcourseflix/pix/program//polygon.svg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{#courseSets}}
+                <div class="frame-5">
+                    <div class="frame-6">
+                        <div class="frame-7">
+                            <img class="lucide-gallery" src="/theme/dlcourseflix/pix/program//gallery-vertical.svg"/>
+                            <div class="text-wrapper-8">{{label}}</div>
+                            {{^isfirstset}}
+                                <div class="play-button-5">
+                                    <div class="text-wrapper-13">{{nextoperator}}</div>
+                                </div>
+                            {{/isfirstset}}
+                        </div>
+                        <span onclick="togleSet('courseset{{number}}', event)" aria-hidden="true"
+                              data-flex-icon="theme_dlcourseflix|expanded"
+                              class="vector flex-icon ft-fw ft lucide-minus button-show-section"></span>
+                        <span onclick="togleSet('courseset{{number}}', event)" aria-hidden="true"
+                              data-flex-icon="theme_dlcourseflix|expanded"
+                              class="d-none vector flex-icon ft-fw ft button-show-section lucide-plus"></span>
+                    </div>
+                    <div class="frame-16" id="courseset{{number}}">
+                        {{#coursesArray}}
+                            <div class="frame-wrapper">
+                                <div class="frame-10">
+                                    <div class="frame-7">
+                                        <img class="image" src="{{image}}"/>
+                                        <div class="frame-11">
+                                            <div class="text-wrapper-9">{{fullname}}</div>
+                                            <p class="text-wrapper-14">
+                                                {{summary}}
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    {{#userAllowed}}
+                                        <div class="frame-12">
+                                            <a href="{{link}}" class="play-button-4">
+                                                <div class="text-wrapper-11">Ir al curso</div>
+                                                <img class="img-2"
+                                                     src="/theme/dlcourseflix/pix/program//chevron-right.svg"/>
+                                            </a>
+                                            <div class="frame-13">
+                                                <div class="bar-circle-2">
+                                                    <div class="active-bar" style="width: {{percent}}%"></div>
+                                                </div>
+                                                <div class="frame-14">
+                                                    <div class="text-wrapper-6">{{percent}}%</div>
+                                                    <div class="text-wrapper-12">{{status}}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{/userAllowed}}
+
+                                    {{^userAllowed}}
+                                        <div class="frame-12">
+                                            <div class="play-button-6">
+                                                <!--<img class="img-2" src="/theme/dlcourseflix/pix/program//info.svg"/>-->
+                                                <div class="m-s-informaci-n">No disponible</div>
+                                            </div>
+                                        </div>
+                                    {{/userAllowed}}
+                                </div>
+                            </div>
+                        {{/coursesArray}}
+                    </div>
+                </div>
+            {{/courseSets}}
+            {{^courseSets}}
+                <p class="text-center">No hay cursos</p>
+            {{/courseSets}}
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    function togleSet(id, evt) {
+        evt['srcElement'].classList.add('d-none')
+        if (evt['srcElement'].nextElementSibling) {
+            evt['srcElement'].nextElementSibling.classList.remove('d-none');
+        } else if (evt['srcElement'].previousElementSibling) {
+            evt['srcElement'].previousElementSibling.classList.remove('d-none')
+        }
+
+        console.log(evt['srcElement'].classList)
+        const set = document.getElementById(id);
+        if (set.getAttribute('class') == 'frame-16') {
+            set.setAttribute('class', 'collapsed');
+        } else {
+            set.setAttribute('class', 'frame-16');
+        }
+    }
+</script>

@@ -1,0 +1,216 @@
+<link rel="stylesheet" href="/blocks/dllearningpath/styles/styleguide.css"/>
+<link rel="stylesheet" href="/blocks/dllearningpath/styles/learningpath.css"/>
+
+<div class="block-learning-path" id="block-learning-path">
+    <p class="text-center learning-title">Mi ruta de aprendizaje</p>
+
+    <div class="frame" id="lp-frame">
+
+        <div class="input-group cf-scroll">
+            <div class="scroll-container-left" onclick="scrolLeft()">
+                <i class="fas fa-chevron-left scroll-left" aria-hidden="true"></i>
+            </div>
+            <div class="scroll-container-right" onclick="scrollRight()">
+                <i class="fas fa-chevron-right scroll-right" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="section-odd">
+
+            {{#odd}}
+                <div class="odd">
+                    <div class="stage">
+                        {{#active_stage}}
+                            <p class="stage_complete_number">{{number}}</p>
+                            <p class="stage_complete_name">{{name}}</p>
+                        {{/active_stage}}
+                        {{^active_stage}}
+                            <p class="stage_number">{{number}}</p>
+                            <p class="stage_name">{{name}}</p>
+                        {{/active_stage}}
+                    </div>
+                </div>
+
+                <div class="odd">
+                    <div class="stage_courses">
+                        {{#courses}}
+                            {{#current}}
+                                <div class="lp-course">
+                                    <a href="{{href}}">
+                                        <div class="item_course_current">
+                                            <div
+                                                    class="current_course">{{name}}
+                                            </div>
+                                            <img class="chevron-right"
+                                                 src="/blocks/dllearningpath/assets/chevron-right.svg"/>
+                                        </div>
+                                    </a>
+                                    <div class="lp-card">
+                                        {{> block_dllearningpath/card}}
+                                    </div>
+                                </div>
+
+                            {{/current}}
+                            {{^current}}
+                                <div class="lp-course">
+                                    <a href="{{href}}">
+                                        <div class="item_course">
+                                            <div
+                                                    class="{{#isCompleted}}course_complete{{/isCompleted}}{{^isCompleted}}course_name{{/isCompleted}}">{{name}}
+                                            </div>
+
+                                            {{#isCompleted}}
+                                                <img class="chevron-right"
+                                                     src="/blocks/dllearningpath/assets/chevron-right-3.svg"/>
+                                            {{/isCompleted}}
+                                            {{^isCompleted}}
+                                                <img class="chevron-right"
+                                                     src="/blocks/dllearningpath/assets/chevron-right-5.svg"/>
+                                            {{/isCompleted}}
+
+                                        </div>
+                                    </a>
+                                    <div class="lp-card">
+                                        {{> block_dllearningpath/card}}
+                                    </div>
+                                </div>
+
+                            {{/current}}
+                            <img class="line" src="/blocks/dllearningpath/assets/line-27.svg"/>
+                        {{/courses}}
+                        {{#haveCourses}}
+                            <button type="button" class="btn btn-primary more-courses" data-toggle="modal"
+                                    data-target="#stage{{number}}">
+                                +{{totalCourses}} Cursos
+                            </button>
+                            {{> block_dllearningpath/modal}}
+                        {{/haveCourses}}
+                    </div>
+                </div>
+            {{/odd}}
+
+        </div>
+
+        <div class="line-container">
+            {{#stages}}
+                {{#active_elipse}}
+                    <img class="elipse" style="{{elipse}}"
+                         src="/blocks/dllearningpath/assets/elipse.svg">{{/active_elipse}}
+                {{^active_elipse}}
+                    <img class="elipse" style="{{elipse}}"
+                         src="/blocks/dllearningpath/assets/elipse-inactive.svg">{{/active_elipse}}
+
+
+                <img class="{{class}}"
+                     {{#active}}src="/blocks/dllearningpath/assets/vector-2.svg"{{/active}}
+                    {{^active}}src="/blocks/dllearningpath/assets/vector.svg"{{/active}}
+                />
+            {{/stages}}
+        </div>
+
+        <div class="section-even">
+
+            {{#even}}
+                <div class="odd">
+                    <div class="stage_courses" {{single}}>
+                        {{#courses}}
+                            {{#current}}
+                                <div class="lp-course">
+                                    <a href="{{href}}">
+                                        <div class="item_course_current">
+                                            <div
+                                                    class="current_course">{{name}}
+                                            </div>
+                                            <img class="chevron-right"
+                                                 src="/blocks/dllearningpath/assets/chevron-right.svg"/>
+                                        </div>
+                                    </a>
+                                    <div class="lp-card">
+                                        {{> block_dllearningpath/card}}
+                                    </div>
+                                </div>
+                            {{/current}}
+                            {{^current}}
+                                <div class="lp-course">
+                                    <a href="{{href}}">
+                                        <div class="item_course">
+                                            <div
+                                                    class="{{#isCompleted}}course_complete{{/isCompleted}}{{^isCompleted}}course_name{{/isCompleted}}">{{name}}
+                                            </div>
+                                            {{#isCompleted}}
+                                                <img class="chevron-right"
+                                                     src="/blocks/dllearningpath/assets/chevron-right-3.svg"/>
+                                            {{/isCompleted}}
+                                            {{^isCompleted}}
+                                                <img class="chevron-right"
+                                                     src="/blocks/dllearningpath/assets/chevron-right-5.svg"/>
+                                            {{/isCompleted}}
+                                        </div>
+                                    </a>
+                                    <div class="lp-card">
+                                        {{> block_dllearningpath/card}}
+                                    </div>
+                                </div>
+                            {{/current}}
+                            <img class="line" src="/blocks/dllearningpath/assets/line-27.svg"/>
+                        {{/courses}}
+                        {{#haveCourses}}
+                            <button type="button" class="btn btn-primary more-courses" data-toggle="modal"
+                                    data-target="#stage{{number}}">
+                                +{{totalCourses}} Cursos
+                            </button>
+                            {{> block_dllearningpath/modal}}
+                        {{/haveCourses}}
+                    </div>
+                </div>
+
+                <div class="odd">
+                    <div class="stage">
+                        {{#active_stage}}
+                            <p class="stage_complete_number">{{number}}</p>
+                            <p class="stage_complete_name">{{name}}</p>
+                        {{/active_stage}}
+                        {{^active_stage}}
+                            <p class="stage_number">{{number}}</p>
+                            <p class="stage_name">{{name}}</p>
+                        {{/active_stage}}
+                    </div>
+                </div>
+            {{/even}}
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function scrolLeft() {
+        const div = document.getElementById('lp-frame');
+        div.scrollBy(-600, 0); // Desplaza hacia arriba 50 píxeles
+    }
+
+    function scrollRight() {
+        const div = document.getElementById('lp-frame');
+        div.scrollBy(600, 0); // Desplaza hacia abajo 50 píxeles
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const windowWidth = window.innerWidth;
+        const elements = document.getElementsByClassName('lp-course');
+        const cards = document.getElementsByClassName('lp-card');
+
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].addEventListener('mouseover', function (event) {
+                const cursorX = event.clientX;
+                if (cursorX > windowWidth / 2) {
+                    cards[i].style.left = 'unset'
+                    cards[i].style.right = '240px'
+
+                } else {
+                    cards[i].style.right = 'unset'
+                    cards[i].style.left = '240px'
+                }
+            })
+        }
+    });
+</script>
+

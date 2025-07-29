@@ -1,0 +1,16 @@
+query local_dlservices_completed_items($spage: Int){
+    local_dlservices_completed_items(spage: $spage){
+        items{
+            id
+            category
+            shortname
+            fullname
+            link
+            imageUrl
+            duration
+            progress
+            top
+            gifImage
+        }
+    }
+}

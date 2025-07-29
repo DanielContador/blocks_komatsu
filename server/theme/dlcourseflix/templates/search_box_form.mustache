@@ -1,0 +1,13 @@
+<form id="dl-topbar-searchform" action="{{searchurl}}" method="{{method}}" class="form-inline" role="form">
+
+    <label for="genericsearchbox" class="sr-only">{{#str}}search, core{{/str}}</label>
+    {{#params}}
+        <input type="hidden" name="{{name}}" value="{{value}}">
+    {{/params}}
+    <i class="fa fa-search"></i>
+    <input type="text" id="genericsearchbox" name="{{searchboxtext}}" class="form-control" value="{{hook}}" placeholder="{{#str}}search, core{{/str}}" />
+    <span class="input-group-btn d-none">
+        <button type="submit" class="btn btn-default">{{#str}}go{{/str}}</button>
+    </span>
+
+</form>

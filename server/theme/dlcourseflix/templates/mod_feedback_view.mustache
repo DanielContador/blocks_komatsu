@@ -1,0 +1,60 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template 'theme_dlcourseflix'; // Full name of the plugin (used for diagnostics)\mod\feedback/mod_feedback_view
+
+    Template purpose and description.
+
+    Classes required for JS:
+    * none
+
+    Data attributes required for JS:
+    * none
+
+    Context variables required for this template:
+    * none
+
+    Example context (json):
+    {
+    }
+}}
+
+<div class="dl-courseflix-feedback-body col-md-12">
+    <div class="courseflix-feedback-title-container">
+        <div class="courseflix-feedback-title">
+            <h1>{{name}}</h1>
+            {{#anonymous}}
+                <p>Modo: Anónima</p>
+            {{/anonymous}}
+            {{^anonymous}}
+                <p></p>
+            {{/anonymous}}
+        </div>
+        <input id="radio-disabled" type="radio" disabled>
+        <label for="radio-disabled"></label>
+    </div>
+    <div class="courseflix-feedback-desc">
+        {{{desc}}}
+    </div>
+    <div class="courseflix-start-feedback">
+        <a href="{{completeUrl}}" class="feedback-start">
+            <b class="feedback-start">Comenzar encuesta</b>
+            <i class="fa-solid fa-chevron-right" style="line-height: unset"></i>
+        </a>
+    </div>
+</div>
+

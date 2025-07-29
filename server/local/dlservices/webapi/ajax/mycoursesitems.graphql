@@ -1,0 +1,19 @@
+query local_dlservices_mycoursesitems($searchTerm: String, $spage: Int, $limit: Int, $programscourses: Boolean) {
+    local_dlservices_mycoursesitems(searchTerm: $searchTerm, spage: $spage, limit: $limit, programscourses: $programscourses) {
+        items{
+            id
+            category
+            shortname
+            fullname
+            summary
+            link
+            imageUrl
+            duration
+            progress
+            status
+            top
+            isNew
+            itemType
+        }
+    }
+}

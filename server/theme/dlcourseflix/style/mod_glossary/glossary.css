@@ -1,0 +1,127 @@
+.entrybox a {
+    color: var(--Blanco, #FFF);
+    text-align: center;
+    font-family: Figtree;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.entrybox b {
+    padding: 10px;
+    border-radius: 20px;
+}
+@media (min-width: 1292px) {
+    .entrybox b {
+        background: rgba(255, 255, 255, 0.50);
+    }
+}
+
+.entry .no-overflow p {
+    color: rgba(255, 255, 255, 0.50);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+.glossarypost tr td label {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+.glossarypost tr td select {
+    border-radius: 11px;
+    background: rgb(81 79 110) !important;
+    appearance: revert !important;
+    display: inline-flex;
+    height: 40px;
+    width: auto;
+    min-width: 222px;
+    padding: 0px 12px !important;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    color: #FFF;
+    text-overflow: ellipsis;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.glossarycontrol a {
+    color: #ff4848;
+}
+
+.glossaryaddentry form input {
+    padding: 8px 12px;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--dl-principal2, #FFF);
+    color: var(--dl-principal, #140A9A);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#page-mod-glossary-edit .fheader {
+    color: var(--dl-secundario) !important;
+    opacity: 0.8;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+#page-mod-glossary-edit .collapsible-actions a, .helptooltip span {
+    color: var(--dl-graygraph);
+    font-family: 'Roboto-Regular', sans-serif;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+#page-mod-glossary-edit .editor_atto_toolbar,
+#page-mod-glossary-edit .editor_atto_content_wrap,
+#page-mod-glossary-edit .editor_atto_wrap textarea {
+    background: var(--dl-background);
+    color: var(--dl-principal2, #FFF);
+}
+
+#page-mod-glossary-edit .editor_atto_notification {
+    background-color: var(--dl-background);
+}
+
+#page-mod-glossary-edit .ftext input,
+#page-mod-glossary-edit .ftextarea textarea,
+#page-mod-glossary-edit .form_autocomplete_input,
+#page-mod-glossary-edit .form-autocomplete-suggestions {
+    background: var(--dl-background);
+    border-radius: 11px;
+    border: 1px solid var(--dl-graygraph);
+    padding: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    color: var(--dl-principal2);
+}
+
+#page-mod-glossary-edit .filemanager .fp-navbar,
+#page-mod-glossary-edit .filemanager-container {
+    background-color: var(--dl-background);
+}
+
+#page-mod-glossary-edit .filemanager .fp-navbar .fp-pathbar a,
+#page-mod-glossary-edit .ftags a {
+    color: var(--dl-principal2);
+}

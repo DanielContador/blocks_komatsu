@@ -1,0 +1,220 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template core/login
+
+    Moodle template for the login page.
+
+    Example context (json):
+    {
+        "autofocusform": false,
+        "canloginasguest": true,
+        "canloginbyemail": true,
+        "cansignup": true,
+        "error": "Invalid login, please try again",
+        "errorformatted": "Test error formatted",
+        "forgotpasswordurl": "http://example.com/login/forgot_password.php",
+        "hasidentityproviders": true,
+        "hasinstructions": true,
+        "has_instructions_or_identity_providers": true,
+        "instructions": "For full access to this site, you first need to create an account.",
+        "loginurl": "http://example.com/stable_master/login/index.php",
+        "rememberusername": true,
+        "rememberusernamechecked": true,
+        "rememberusernamelabel": "Remember username",
+        "skiplinktext": "Skip log in block",
+        "signupurl": "http://localhost/stable_master/login/signup.php",
+        "cookieshelpiconformatted": "",
+        "username": "",
+        "logintoken": "asoifvaldshk",
+        "identityproviders": [
+          {
+            "url": "http://login.google.url/",
+            "iconurl": "https://accounts.google.com/favicon.ico",
+            "name": "Google"
+          },
+          {
+            "url": "http://login.microsoft.url/",
+            "buttonimageurl": "/auth/oauth2/pix/login_button/microsoft.svg",
+            "name": "Microsoft",
+            "issuertype": "microsoft"
+          }
+        ]
+    }
+}}
+{{#hero_image}}
+  <div id="login_hero-image">
+    <img src="{{hero_image}}" alt="{{hero_alt}}"/>
+  </div>
+{{/hero_image}}
+<div id="dl-gradient-overlay-login"></div>
+<div id="login_hero-image-bi" style='{{#hero_image}}background-image:url("{{hero_image}}"){{/hero_image}}'>
+  {{#hasinstructions}}
+  <div class="loginbox clearfix twocolumns">
+  {{/hasinstructions}}
+  {{^hasinstructions}}
+  <div class="loginbox clearfix onecolumn">
+  {{/hasinstructions}}
+
+  <a class="skip-block" href="#login-skipped">{{skiplinktext}}</a>
+  <div class="loginpanel">
+    <h2 class="ff-bold text-align-center mb-5">{{#str}} login {{/str}}</h2>
+
+    <div class="subcontent loginsub">
+      {{#error}}
+        <div id="loginerrormessage" class="loginerrors" role="alert">
+          {{error}}
+        </div>
+      {{/error}}
+      <form action="{{loginurl}}" method="post" id="login" data-core-autoinitialise="true"
+            data-core-autoinitialise-amd="core/form_duplicate_prevent">
+        <div class="loginform">
+          <div class="form-input">
+            <input
+                type="text"
+                name="username"
+                placeholder="{{^canloginbyemail}}{{#str}} username {{/str}}{{/canloginbyemail}}{{#canloginbyemail}}{{#str}} usernameemail {{/str}}{{/canloginbyemail}}"
+                id="username"
+                size="15"
+                value="{{username}}"
+                {{#error}}aria-describedby="loginerrormessage"{{/error}}
+            >
+          </div>
+          <div class="clearer"><!-- --></div>
+          <div class="form-input">
+            <input
+                type="password"
+                name="password"
+                placeholder="{{#str}} password {{/str}}"
+                id="password"
+                size="15"
+                value=""
+                autocomplete="off"
+                {{#error}}aria-describedby="loginerrormessage"{{/error}}
+            >
+          </div>
+          <input type="hidden" name="logintoken" value="{{logintoken}}"/>
+        </div>
+
+        <div class="clearer"><!-- --></div>
+        <div class="d-flex justify-content-between">
+          {{#rememberusername}}
+            <div class="rememberusername">
+              <input type="checkbox" name="rememberusernamechecked" id="rememberusernamechecked" value="1"
+                     {{#rememberusernamechecked}}checked="checked"{{/rememberusernamechecked}} />
+              <label for="rememberusernamechecked">{{#str}} rememberusername, theme_dlcourseflix {{/str}}</label>
+            </div>
+          {{/rememberusername}}
+          <div class="forgetpass">
+            <a href="{{forgotpasswordurl}}">{{#str}} forgotpassword, theme_dlcourseflix {{/str}}</a>
+          </div>
+        </div>
+        <div class="clearer"><!-- --></div>
+        <input id="anchor" type="hidden" name="anchor" value=""/>
+        <script>document.getElementById('anchor').value = location.hash;</script>
+        <input type="submit" id="loginbtn" class="dl-loginbtn" value={{#quote}}{{#str}} login {{/str}}{{/quote}} />
+      </form>
+
+      <p class="text-center">O</p>
+
+      <div class="potentialidp text-center dl-loginbtn" style="margin-top: 5px">
+        <a href="/local/msauth_dl/index.php" style="font-weight: bold; text-decoration: none">
+          <img src="https://www.microsoft.com/favicon.ico" alt="" width="24" height="24"/>
+          Iniciar sesión con Microsoft
+        </a>
+      </div>
+
+      {{#has_instructions_or_identity_providers}}
+        {{#hasidentityproviders}}
+          {{#identityproviders}}
+            <div class="potentialidp">
+              {{#buttonimageurl}}
+                <a href="{{{url}}}" class="tw-oauth2-login-button-{{issuertype}}">
+                  <img src="{{buttonimageurl}}" alt="{{name}}"/>
+                </a>
+              {{/buttonimageurl}}
+              {{^buttonimageurl}}
+                <a href="{{{url}}}" class="btn btn-default">
+                  {{#iconurl}}
+                    <img src="{{iconurl}}" alt="" width="24" height="24"/>
+                  {{/iconurl}}
+                  {{#icon}}
+                    {{#context}}{{>&&template}}{{/context}}
+                  {{/icon}}
+                  {{name}}
+                </a>
+              {{/buttonimageurl}}
+            </div>
+          {{/identityproviders}}
+        {{/hasidentityproviders}}
+      {{/has_instructions_or_identity_providers}}
+
+    </div>
+
+    {{#canloginasguest}}
+      <div class="subcontent guestsub">
+        <div class="desc">{{#str}} someallowguest {{/str}}</div>
+        <form action="{{loginurl}}" method="post" id="guestlogin" data-core-autoinitialise="true"
+              data-core-autoinitialise-amd="core/form_duplicate_prevent">
+          <div class="guestform">
+            <input type="hidden" name="username" value="guest"/>
+            <input type="hidden" name="password" value="guest"/>
+            <input type="hidden" name="logintoken" value="{{logintoken}}"/>
+            <input type="submit" value={{#quote}}{{#str}} loginguest {{/str}}{{/quote}} />
+          </div>
+        </form>
+      </div>
+    {{/canloginasguest}}
+  </div>
+  <span id="login-skipped" class="skip-block-to"></span>
+
+  {{#has_instructions_or_identity_providers}}
+    <div class="signuppanel">
+      {{#hasinstructions}}
+        <h2>{{#str}} firsttime {{/str}}</h2>
+        <hr/>
+        <div class="subcontent">
+          {{{instructions}}}
+          {{#cansignup}}
+            <div class="signupform">
+              <form action="{{signupurl}}" method="get" id="signup" data-core-autoinitialise="true"
+                    data-core-autoinitialise-amd="core/form_duplicate_prevent">
+                <div>
+                  <input type="submit" value={{#quote}}{{#str}} startsignup {{/str}}{{/quote}} />
+                </div>
+              </form>
+            </div>
+          {{/cansignup}}
+        </div>
+      {{/hasinstructions}}
+    </div>
+  {{/has_instructions_or_identity_providers}}
+  <div class="row dl-footermark-box">
+    {{#pix }} footermark, theme_dlcourseflix, {"alt":"footer-logo", "class": "dl-footermark"} {{/pix }}
+  </div>
+</div>
+</div>
+
+  {{#js}}
+    {{#autofocusform}}
+      if (document.getElementById('username').value !== "") {
+      document.getElementById('password').focus();
+      } else {
+      document.getElementById('username').focus();
+      }
+    {{/autofocusform}}
+  {{/js}}

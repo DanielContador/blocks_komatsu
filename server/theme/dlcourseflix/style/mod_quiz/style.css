@@ -1,0 +1,472 @@
+h3{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: var(--dl-graygraph) !important;
+}
+
+body.dl-dark-mode #region-main div[role="main"]>h3 {
+    color: white;
+    color: white !important;
+    font-family: 'Roboto-Bold', sans-serif;
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.que .content{
+    margin: 0;
+}
+
+ div.qtext{
+    border-radius: 44px;
+    background-color: var(--dl-secundario2) !important;
+    margin: auto;
+    align-items: center;
+    justify-content: left;
+    display: grid;
+    padding: 8px 36px;
+    min-height: 81px;
+}
+
+ .que p{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+     margin: 0;
+}
+
+ div.answer label{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px !important;
+    letter-spacing: 0;
+    vertical-align: top;
+    color: var(--dl-principal2);
+}
+
+ div.answer input[type="radio"], .que.multichoice div.answer input[type="radio"]{
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--dl-graygraph);
+    background-color: var(--dl-background);
+}
+
+ div.answer input[type="radio"]:checked, .que.multichoice div.answer input[type="radio"]:checked{
+    border: 1px solid var(--dl-principal2);
+    background: var(--dl-principal2);
+    color: var(--dl-background);
+}
+
+ div.answer input[type="radio"]:checked:after, .que.multichoice div.answer input[type="radio"]:checked:after{
+    border: 1px solid var(--dl-principal2);
+    background: var(--dl-principal2);
+    color: var(--dl-background);
+}
+
+
+
+ .que.correct, .que.incorrect {
+    border: none;
+}
+
+ .que .info {
+    display:none;
+}
+
+/* .que .info {
+    background-color: #06032f;
+}
+
+ .que .info h3{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ .que .info>div{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ .que .info div.editquestion a,  table.quizreviewsummary td.cell a{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dl-graygraph);
+}*/
+
+ .formulation .incorrect,  .formulation .correct{
+    background-color: var(--dl-background);
+}
+
+ div.answer div.incorrect>label{
+    color: #FF4848;
+}
+
+ div.answer div.correct>label{
+    color: #2BB673;
+}
+
+#mod_quiz_navblock{
+    margin: auto;
+    display: grid;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+  /*  width: 75%;*/
+    /*padding-left: 64px;*/
+    float: left;
+}
+
+/*body #block-region-side-post{
+    position: absolute;
+    margin-top: 300px;
+}*/
+
+/*body.empty-region-side-post #region-main, body.empty-region-side-post #mod_quiz_navblock{
+    width: 100%;
+    padding-right: 187px;
+    padding-left: 187px;
+}*/
+
+#mod_quiz_navblock .activity-title{
+    align-items: start;
+    display: flex;
+    margin-bottom: 22px;
+}
+
+#mod_quiz_navblock .block-header ,.block_fake .block-header .block-title span#mod_quiz_navblock_title {
+    display: none;
+}
+
+#mod_quiz_navblock .block-header h2 span,#mod_quiz_navblock .activity-title h2{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    color: var(--dl-principal2);
+}
+
+#mod_quiz_navblock .content{
+    margin: auto;
+    text-align: center;
+}
+
+#mod_quiz_navblock .content .othernav a, div.quizattemptcounts a{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dl-graygraph);
+}
+
+.wizard-step {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #3A376F;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wizard-step.active{
+    text-decoration: underline;
+}
+
+.wizard-step.active, .wizard-step[title="Respuesta guardada"], .wizard-step[title="Correcta"] {
+    background-color: white;
+    color: var(--dl-background) !important;
+}
+
+.wizard-step[title="Correcta"] span{
+    color: var(--dl-background);
+}
+
+
+.wizard-step[title="Incorrecta"], .wizard-step[title="Sin contestar"] {
+    background-color: var(--dl-variante1);
+}
+
+.wizard-step-number {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 11.38px;
+    line-height: 11.92px;
+    letter-spacing: 0;
+    color: var(--dl-principal2);
+}
+
+/* Opcional, para el número de paso */
+.wizard-step.active .wizard-step-number, .wizard-step[title="Respuesta guardada"] .wizard-step-number {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 800;
+    font-size: 11.38px;
+    line-height: 11.92px;
+    letter-spacing: 0;
+    color: var(--dl-principal);
+    margin: auto;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.wizard-step.active[title="Incorrecta"] .wizard-step-number, .wizard-step.active[title="Sin contestar"] .wizard-step-number{
+    color: var(--dl-principal2) !important;
+}
+
+.progress-container {
+    overflow: hidden; /* opcional, para asegurar que se recorte el contenido si se usa un degradado */
+}
+
+/* Estado para la pregunta actual: 50% blanco, 50% #3A376F */
+.progress-current {
+    background: linear-gradient(to right, white 50%, #3A376F 50%);
+}
+
+.progress-not-passed {
+    background:  #3A376F ;
+}
+
+/* Estado para pregunta completada: fondo completamente blanco */
+.progress-passed {
+    background-color: white;
+}
+
+.generaltable.quizattemptsummary tr.lastrow,  .generaltable > tbody > tr{
+    background: var(--dl-background);
+}
+
+/*.generaltable.quizattemptsummary tr.lastrow a,  .generaltable > tbody > tr a{
+    color: var(--dl-graygraph);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}*/
+
+/*#mod_quiz_preflight_form input#id_submitbutton {
+    background: var(--dl-principal2);
+    color: var(--dl-principal);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 5px;
+    border: 1px solid var(--dl-principal2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}*/
+
+.moodle-dialogue-base .moodle-dialogue-wrap #mod_quiz_preflight_form input#id_submitbutton {
+    color: var(--btn-prim-text-color);
+    background: var(--btn-prim-bg-color);
+}
+
+.confirmation-dialogue .confirmation-message{
+    color: var(--dl-graygraph);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.moodle-dialogue-confirm .confirmation-buttons .btn-primary, .moodle-dialogue-base .moodle-dialogue-wrap #mod_quiz_preflight_form input#id_submitbutton{
+    color: var(--btn-accent-color);
+    background: var(--dl-principal2);
+    border-color: var(--dl-background);
+
+}
+
+.moodle-dialogue-confirm .confirmation-buttons .btn-primary:hover, .moodle-dialogue-base .moodle-dialogue-wrap #mod_quiz_preflight_form input#id_submitbutton:hover{
+    color: var(--btn-accent-color);
+    background: var(--dl-principal2);
+    border-color: var(--dl-background);
+    border-bottom-color: var(--dl-background);
+    box-shadow: rgba(0, 0, 0, 0.11) 0px 4.42816px 4.42816px 0px;
+    border-left-color: var(--dl-background);
+    border-right-color: var(--dl-background);
+    border-top-color: var(--dl-background);
+}
+
+ table thead th{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--dl-principal2);
+}
+
+table tr td ,  table tbody tr td a {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--dl-principal2);
+    border-color: var(--dl-background) !important;
+    background-color: var(--dl-background) !important;
+}
+
+table.quizreviewsummary{
+    width: 70% !important;
+}
+
+table.quizreviewsummary th.cell{
+    font-family: 'Roboto-SemiBold', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--dl-principal2);
+    text-align: left;
+
+}
+
+table.quizreviewsummary td.cell{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--dl-principal2);
+    text-align: justify;
+}
+
+
+.que .history{
+    background: var(--dl-background);
+    border-color: var(--dl-graygraph) !important;
+    background-color: var(--dl-background) !important;
+}
+
+
+.que .history h4, .mform .ftoggler{
+    font-family: 'Roboto-Medium', sans-serif;
+    line-height: 30px;
+    color: var(--dl-graygraph);
+}
+
+.mform .fitem_id_honestycheckmessage{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--dl-principal2);
+    padding-left: 20px;
+}
+
+table.quizreviewsummary th.cell, table.quizreviewsummary td.cell, table.quizsummaryofattempt td.cell {
+    width: 10em;
+    background: var(--dl-background);
+    border-color: var(--dl-graygraph) !important;
+    background-color: var(--dl-background) !important;
+}
+table.quizreviewsummary th.cell, table.quizreviewsummary td.cell{
+    padding: 1px 0.5em 1px 1em;
+}
+table.quizsummaryofattempt td.cell {
+    padding: 1px 0.5em 1px 0.3em;
+}
+#page-mod-quiz-view #page .quizattempt{
+    text-align: center;
+}
+
+#page-mod-quiz-attempt .submitbtns, #page-mod-quiz-review .submitbtns,
+#page-mod-quiz-view #fgroup_id_buttonar{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#page-mod-quiz-view #fgroup_id_buttonar{
+    display: inline-grid;
+}
+
+.btn-group-quiz {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*#page-mod-quiz-summary .submitbtns{
+    width: auto;
+    display: table-cell;
+}*/
+
+#page form input[type="submit"],
+#page-mod-quiz-attempt .submitbtns .mod_quiz-next-nav,
+#page-mod-quiz-review .submitbtns .mod_quiz-next-nav,
+#page-mod-quiz-attempt .submitbtns .mod_quiz-prev-nav,
+#page-mod-quiz-review .submitbtns .mod_quiz-prev-nav,
+#page-mod-quiz-summary .submitbtns,
+#page-mod-quiz-view #fgroup_id_buttonar .felemen.tfgroup{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 14px;
+    color: var(--dl-principal);
+    background:  var(--dl-principal2);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#page-mod-quiz-summary #page .controls{
+    margin: 0;
+}
+
+#page-mod-quiz-view .generalbox#feedback{
+    width: 100% !important;
+    margin: auto;
+}
+
+.qn_buttons .progress-container {
+    display: inline-grid;
+}
+
+.qn_buttons .progress-container:last-child {
+    display: none;
+}
+
+#page-mod-quiz-attempt #block-region-side-post, .topics{
+    position: absolute;
+    right: 0;
+    top: 250px;
+}
+
+#page-mod-quiz-view .fitem.femptylabel{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#page-mod-quiz-review span.flex-icon.ft-fw.ft.fa-check.ft-state-success {
+    background: white;
+    color: var(--dl-background);
+    box-shadow: none;
+}
+
+#page-mod-quiz-review span.flex-icon.ft-fw.ft.fa-check.ft-state-success:after {
+    border: solid var(--dl-background);
+    border-width: 0 2px 2px 0;
+    color: var(--dl-background);
+}
+
+#page-mod-quiz-review div.answer div.incorrect span.ft-state-danger:before {
+    display: none;
+}
+
+#page-mod-quiz-view .quizattempt .continuebutton {
+    justify-content: center;
+    display: flex;
+}
+
+#page-mod-quiz-summary p.mesaje-attempt {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}

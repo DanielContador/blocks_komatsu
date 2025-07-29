@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25823361-8240-4ba8-9938-8ac514f5efd7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl/client/component/dl/build/tui_bundle.development.js" beforeDir="false" afterPath="$PROJECT_DIR$/dl/client/component/dl/build/tui_bundle.development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl/client/component/dl/src/components/grid/GridItem1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dl/client/component/dl/src/components/grid/GridItem1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl/client/component/dl/src/components/grid/GridMoreViewItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dl/client/component/dl/src/components/grid/GridMoreViewItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl/client/component/dl/src/components/grid/GridRow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dl/client/component/dl/src/components/grid/GridRow.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl/client/component/dl/src/components/slider/CourseSlider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dl/client/component/dl/src/components/slider/CourseSlider.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dl/client/component/dl/src/components/slider/SliderGridRow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dl/client/component/dl/src/components/slider/SliderGridRow.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/dl" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$USER_HOME$/Downloads/moodle" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="30HbULGczoIixfkxLo0plsaPlvS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Daniel Contador/Documents/GitHub/TOT_theme_dlcourseflix&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;C:\\Users\\Daniel Contador\\Documents\\GitHub\\TOT_theme_dlcourseflix\\dl\\node_modules\\stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2024.1.7\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniel Contador\Documents\GitHub\TOT_theme_dlcourseflix\client\component" />
+      <recent name="C:\Users\Daniel Contador\Documents\GitHub\TOT_theme_dlcourseflix\server\blocks" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.19416.23" />
+        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.19416.23" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25823361-8240-4ba8-9938-8ac514f5efd7" name="Changes" comment="" />
+      <created>1753287459168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753287459168</updated>
+      <workItem from="1753287461439" duration="6928000" />
+      <workItem from="1753363445061" duration="3441000" />
+      <workItem from="1753368352569" duration="17875000" />
+      <workItem from="1753453750018" duration="13507000" />
+      <workItem from="1753713503053" duration="18994000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

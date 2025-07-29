@@ -1,0 +1,89 @@
+<div id="dlmylearning_wrapper_certifications" class="hidden">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    {{! Courses block header }}
+    <div id="dlmylearning-certif-header" class="d-flex mb-20">
+        <div id="dlmylearning-certif-title" class="p-10 mr-15">
+            <h3 class="fw-600">{{#str}}recentcertifications, block_dlmylearning{{/str}}</h3>
+        </div>
+        <div id="dlmy-gotocertifications-top" class="dlbtn-a1 d-xs-none">
+            <a href="{{certif_url}}">{{#str}}gotocertifications, block_dlmylearning{{/str}}</a>
+        </div>
+    </div>
+    {{#has_certifications}}
+        {{! Certifications List}}
+        <div class="{{ carousel_certifications }} slick2" data-cards-number={{countcards}}>
+            {{#mycertifications}}
+                <div class="dl-certif-card">
+                    <div class="dl-certif-image {{#recertifpath}}dl-recertif{{/recertifpath}}">
+                        <a href="{{url}}">
+                            {{#certifpath}}
+                                {{#flex_icon}}theme_dl|certif{{/flex_icon}}
+                            {{/certifpath}}
+                            {{#recertifpath}}
+                                {{#flex_icon}}theme_dl|recertif{{/flex_icon}}
+                            {{/recertifpath}}
+                        </a>
+
+                        {{#has_tag}}
+                            <div class="dl-certif-tag fw-600">
+                                {{certiftag}}
+                            </div>
+                        {{/has_tag}}
+                    </div>
+                    <div class="dl-certif-card-body p-15">                        
+                        <div class="dl-certif-card-content">
+                            <div class="dl-certif-state-date d-flex">
+                                <div class="dl-certif-state d-flex">
+                                    {{# completed}}
+                                        {{{completed_icon}}}
+                                        {{#str}}statecomplete, block_dlmylearning{{/str}}
+                                    {{/completed}}
+                                    {{# inprogress}}
+                                        {{{inprogress_icon}}}
+                                        {{#str}}stateinprogress, block_dlmylearning{{/str}}
+                                    {{/inprogress}}
+                                    {{# notstarted}}
+                                        {{{notstarted_icon}}}
+                                        {{#str}}statenotstarted, block_dlmylearning{{/str}}
+                                    {{/notstarted}}
+                                </div>
+                                {{#duedate}}
+                                <div class="dl-certif-duedate">
+                                    <span>{{duedate}}<span>
+                                </div>
+                                {{/duedate}}
+                            </div>
+                            <div class="dl-certif-card-info">
+                                <div class="">
+                                    <h4 class="dl-certifname fw-700">{{fullname}}</h4>
+                                </div>
+                                <p class="description">{{description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            {{/mycertifications}}
+        </div>
+
+        {{! Course Footer}}
+        <div id="dl-certifications-footer" class="dlgrid-bnt-footer">
+            <div id="dlmylearning-gotocertifications-bottom" class="dlbtn-a1 d-xs-block d-none">
+                <a href="{{certif_url}}">{{#str}}gotocertifications, block_dlmylearning{{/str}}</a>
+            </div>
+        </div>
+    {{/has_certifications}}
+</div>
+
+{{#js}}
+    require(['block_dlmylearning/carousel'], function (carousel_grid) {
+        $('div#dlmylearning_wrapper_certifications').removeClass('hidden');
+        $('div#dlmylearning_wrapper_certifications').css('display','block');
+    
+        carousel_grid.configSlidestoShow("{{ region }}","{{ carousel_certifications }}");
+    });  
+    
+    $( window ).on( "orientationchange", function( event ) {
+        location.reload();
+    });
+    
+{{/js}}

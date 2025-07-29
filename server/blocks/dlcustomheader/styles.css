@@ -1,0 +1,8 @@
+#page-course-index {
+    #block-region-top {
+        .block_dlcustomheader {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+}

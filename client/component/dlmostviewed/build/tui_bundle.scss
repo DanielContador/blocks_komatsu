@@ -1,0 +1,1195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.dl-course-card {
+  background-color: #06032F;
+  width: 278px;
+  height: 158px;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  box-shadow: 1px 2px 2px 0 #06032f;
+}
+
+.dl-course-card:hover {
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+.dl-course-card-image {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+.dl-top-tag {
+  position: relative;
+  bottom: 158px;
+  left: 238px;
+  width: 40px;
+  height: 46px;
+  background-color: #FFC82F;
+  text-align: center;
+  border-top-right-radius: 5px;
+  padding-top: 15px;
+
+  p {
+    font-family: 'Open Sans', serif;
+    letter-spacing: 0;
+    line-height: 0.3;
+    color: #140A9A;
+    font-weight: bold;
+  }
+
+  .dl-rotate {
+    transform: skewY(8deg);
+    background-color: #FFC82F;
+    width: 100%;
+    height: 8px;
+  }
+}
+
+.dl-course-dynamic {
+  width: 50%;
+  height: 65px;
+  position: relative;
+  bottom: 140px;
+  left: 75px;
+  text-align: center;
+
+  p {
+    font-family: 'Montserrat', serif;
+    text-transform: uppercase;
+    line-height: 0.5;
+    letter-spacing: 0;
+  }
+
+  p:first-of-type {
+  }
+
+  p:nth-of-type(2) {
+    color: #FFC82F;
+  }
+
+  p:nth-of-type(3) {
+    color: #FFFFFF;
+  }
+
+}
+
+.dl-recent-course {
+  width: 125px;
+  height: 21px;
+  background-color: #FFC82F;
+  position: relative;
+  bottom: 132px;
+  left: 80px;
+  text-align: center;
+  align-content: center;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 4px;
+
+  p {
+    font-size: 1rem;
+    font-family: 'Open Sans', serif;
+    font-weight: bold;
+    color: #140A9A;
+    margin: 0;
+    padding-top: 4px;
+  }
+}
+
+.dl-course-percent-bar {
+  background-color: #6E757A;
+  position: relative;
+  width: 162px;
+  height: 5px;
+  bottom: 120px;
+  left: 60px;
+  border-radius: 5px;
+
+  .dl-fill-progress {
+    background-color: #FFC82F;
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
+  }
+}
+
+.dl-card-body {
+  background-color: #06032F;
+  width: 95%;
+  height: 0;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  padding-left: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 1px 2px 2px 0 #06032f;
+
+  .dl-play-buttons-container {
+    background-color: white;
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    text-align: center;
+    align-content: center;
+  }
+
+  .dl-like-buttons-container {
+    background-color: #2c3e50;
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    text-align: center;
+    align-content: center;
+    border: 2px solid #FFFFFF;
+    margin-left: 10px;
+  }
+
+  .dl-play-buttons {
+    display: flex;
+    margin-left: 5px;
+  }
+
+  .dl-play-buttons-container i {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    padding-top: 3px;
+    padding-left: 3px;
+  }
+
+  .dl-like-buttons-container i {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+  }
+
+  .dl-course-category, .dl-course-name {
+    color: #FFFFFF;
+  }
+
+  .dl-course-level {
+    display: flex;
+    margin-top: 5px;
+    color: #FFC82F;
+    font-weight: bold;
+  }
+
+  .dl-course-time {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    margin-left: 5px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.z-index-negative {
+  z-index: -1;
+}
+
+.expanded-course-card {
+  transform: scale(1.1);
+  z-index: 2;
+  transition: transform .3s;
+}
+
+.tui-dlGridRowContent {
+  display: inline-flex;
+  white-space: nowrap;
+  margin-left: calc(-1 * var(--dl-grid-gap));
+  margin-right: calc(-1 * var(--dl-grid-gap));
+  padding-left: var(--dl-grid-gap);
+  padding-right: var(--dl-grid-gap);
+}
+
+.tui-dlGridRow {
+  overflow: hidden;
+  height: 350px;
+  margin-bottom: -205px;
+}
+
+.tui-dlGridRow .tui-dlHandle.tui-dlHandlePrev {
+  height: 200px;
+  left: calc(0.0 * var(--dl-grid-gap)) !important;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #06032F 100%);
+}
+
+.tui-dlGridRow .tui-dlHandle.tui-dlHandleNext {
+  height: 200px;
+  right: calc(0.0 * var(--dl-grid-gap)) !important;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #06032F 100%);
+}
+
+.tui-dlGridItemContainer {
+  width: 290px !important;
+}
+
+.dlcc-progress-bar-overlay {
+  background-color: transparent;
+  position: relative;
+  border: 2px solid;
+  bottom: 150px;
+  width: 278px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 18px;
+}
+
+.dlcc-progress-bar {
+  background-color: #FFFFFF;
+  height: 100%;
+}
+
+.dlcc-overlay {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+
+  position: absolute;
+
+  top: 0; left: 0;
+
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom,
+  rgba(0, 0, 0, 0) 20%,
+  #1b156d 90%);
+
+  pointer-events: none; /* deja clics al <img> si quieres */
+}
+
+.dlcc-progress-text {
+  position: relative;
+  bottom: 17px;
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.tui-learningItemsBanner {
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+    margin-left: -64px;
+    margin-right: -64px;
+    @media screen and (max-width: 1024px) {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+}
+
+.tui-dlCourseButton {
+    margin-top: 8px;
+    a {
+        display: flex;
+        align-items: center;
+        padding: 0.3em .6em;
+        padding-top: 8px;
+        padding-right: 12px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        background-color: white;
+        border-radius: 4px;
+        text-align: center;
+        color: var(--dl-principal);
+        font-family: 'Roboto-Bold', sans-serif;
+        font-size: 14px;
+        width: -webkit-max-content;
+        width: max-content;
+        &:hover {
+            background-color: gray-100;
+        }
+        &:focus {
+            outline: none;
+            ring: 2px;
+            ring-color: var(--dl-background);
+        }
+        img {
+            margin-left: 4px;
+        }
+        @media screen and (max-width: 767.98px) {
+            padding: 0.3em .6em;
+            font-size: 12px;
+        }
+    }
+}
+
+:root {
+  --dl-principal: #0C0A9A;
+  --dl-principal2: #FFFFFF;
+  --dl-secundario: #D52B1E;
+  --dl-secundario2: #3A376F;
+  --dl-background: #06032F;
+  --dl-variante1: #FF6E6E;
+  --dl-variante2: #6699FF;
+  --dl-variante3: #6E7087;
+  --dl-degradado: #6699FF;
+}
+
+:root {
+  --dl-grid-gap: 65px;
+}
+
+
+
+/* Add any additional global styles here */
+.flex {
+    display: flex;
+}
+.relative {
+    position: relative;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.table {
+    display: table;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.rounded-lg {
+    border-radius: 4.329px; /* Adjust as needed */
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-end {
+    align-items: flex-end;
+}
+.w-full {
+    width: 100%;
+}
+.mb-12 {
+    margin-bottom: var(--gap-12);
+}
+
+/*body, .block {
+    background-color: var(--dl-background) !important;
+    color: white !important;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+}
+
+.totaraNav{
+    position: absolute;
+    width: 100%;
+}
+
+.totaraNav ul{
+    background: none;
+}
+
+.totaraNav nav.totaraNav_prim {
+    background: linear-gradient(to bottom,
+            var(--dl-background) 20%,  !* Color inicial ocupa el 20% del espacio *!
+            rgba(0, 0, 0, 0.5) 50%,    !* Punto intermedio con un color semi-transparente *!
+            transparent 80%);
+}
+.totaraNav_prim>.container-fluid, .totaraNav_prim--list_item.totaraNav_prim--list_item_selected a{
+    font-weight: bold;
+}
+
+.totaraNav nav.totaraNav_sub, ul.totaraNav_prim--list.totaraNav_prim--list_hideMobile {
+    background: transparent;
+}
+
+.totaraNav_prim--list_item .totaraNav_prim--list_item_link, .totaraNav_prim--side span.flex-icon::before,
+.totaraNav_prim--side .usermenu .toggle-display{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.tui-dlCourseCarousel.slide {
+    margin-right: -32px;
+    margin-left: -32px;
+}*/
+
+.tui-dlGridItem2 {
+  width: 300px;
+  height: 160px;
+  box-shadow: none;
+  overflow: visible;  
+  position: relative;  
+  transition: transform 0.3s ease-in-out;
+  transform-origin: top;
+  cursor: pointer;
+  &.zoom-effect {
+    z-index: 10; /* Ensure this value is higher than other elements */
+    overflow: visible;
+    .tui-dlCourseButton {
+      transform: scale(0.714);
+      transform-origin: bottom left;
+    }
+    .tui-dlCardCourseDuration {
+      transform: scale(0.714);
+      transform-origin: bottom right;
+      text-align: end;
+    }
+    .content-wrapper {
+      .tui-dlBoxartImage {
+        width: 100%;
+        max-width: unset !important;
+      }
+      .styled-number {
+        display: none;
+      }
+    }
+  }
+  .tui-dlCourseInfoContainer {
+    color: #fff;
+    display: none;
+    padding: 18px;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+    background-color: #06032f;
+    border-radius: 0 0 5px 5px;
+    .tui-dlCardCourseTitle {
+      margin-bottom: 16px;
+      font-size: 15px; /* Adjusted for scaling*/
+      line-height: 18px;
+      font-family: "Roboto-Bold", sans-serif;
+    }
+    .tui-dlCardCourseCategories {
+      color: #f99;
+      font-size: 12px; /* Adjusted for scaling*/
+      line-height: 18px;
+      font-family: "Roboto-Regular", sans-serif;
+    }
+  }
+}
+.first-item {
+  .tui-dlGridItem2 {
+    transform-origin: top left !important;
+  }
+}
+.last-item {
+  .tui-dlGridItem2 {
+    transform-origin: top right !important;
+  }
+}
+/* .tui-dlBoxartImage {*/
+/*   width: 281.37px;*/
+/*   height: 158px;*/
+/* }*/
+
+/*Cambios Container*/
+.tui-dlBoxartContainer {
+  display: flex; /* Habilita Flexbox */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  height: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+}
+
+.content-wrapper {
+  /*display: flex;  Habilita Flexbox dentro del contenedor */
+  align-items: center; /* Alinea verticalmente los elementos */
+  width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+  position: relative;
+  display: inline-flex; /* Asegura que el contenedor se ajuste al contenido */
+  text-align: right; /* Centra el texto horizontalmente */
+  overflow: hidden;
+}
+
+.content-wrapper > img {
+  flex: 1; /* Ambos elementos ocupan el mismo espacio */
+  max-width: 60%; /* Limita el ancho m�ximo al 50% del contenedor */
+  box-sizing: border-box; /* Incluye el padding y border en el c�lculo del ancho */
+  z-index: 1;
+}
+
+.content-wrapper span.styled-number {
+  font-family: Open Sans;
+  font-size: 250px;
+  line-height: 0.8;
+  z-index: 1;
+  letter-spacing: -20px;
+  color: #04121f;
+  -webkit-text-stroke: 3px #2b2b2b;
+  font-weight: 900;
+  margin-right: -2.4rem;
+  margin-top: -1rem;
+  font-variant-numeric: proportional-nums;
+  @media screen and (max-width: 767.98px) {
+    font-size: 150px;
+    margin-right: 0;
+  }
+}
+
+/*span.number-0 {
+  margin-left: -5px;
+}
+
+span.number-1, span.number-0 {
+  !*font-size: 113px;
+  transform: scale(1.1, 1.8);*!
+  float: left;
+}*/
+
+span.styled-number img {
+  height: 152px;
+  margin-top: -12px;
+}
+.tui-dlGridItemContainer.more-views-courses.index-9 {
+  width: auto;
+}
+
+.tui-dlGridItemContainer.more-views-courses img.tui-dlBoxartImage {
+  height: 185px;
+  width: 162px;
+  border-radius: 4px;
+  @media screen and (max-width: 767.98px) {
+    height: 116px;
+    width: 100px;
+  }
+}
+
+.content-wrapper > img {
+  object-fit: cover;
+  height: 158px;
+  display: block;
+  transition: transform 2s ease-in-out;
+}
+
+.tui-dlBoxartImage {
+  width: 100%;
+  height: 158px;
+  display: block;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.content-wrapper:hover .styled-number {
+  /* opacity: 0;*/
+}
+
+/* .content-wrapper:hover img {*/
+/*   transform: scale(2.1);*/
+/* }*/
+.dl-course-dynamic-overlay {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  margin-top: 7rem;
+  z-index: 2;
+  text-align: left;
+  max-width: 90%;
+  pointer-events: none;
+
+  .course-line {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0;
+    margin-left:11rem;
+    
+    color: #ffffff;
+    font-weight: normal;
+    background: transparent;
+  }
+
+  .highlight {
+    color: #ffc82f;         
+    font-weight: bold;      
+    background: transparent;
+  }
+
+  .white {
+    color: #ffffff;       
+    font-weight: bold;       
+    background: transparent;
+  }
+}
+.image-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35); /* controla aquí el "oscurecimiento"*/
+  border-radius: 5px 5px 0 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+ .image-wrapper {
+  position: relative;
+  z-index: 2;
+ }
+
+ 
+
+.tui-componentLoading .tui-iconLoading {
+  font-size: 2.6rem;
+}
+.tui-dlCourseCategoryHeading {
+  font-size: 20px;
+  font-family: "Roboto-Bold", sans-serif;
+  line-height: 34px;
+}
+
+.tui-dlCourseCategoryHeading.categories {
+  margin-top: 65px;
+}
+
+.tui-dlGridRow {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 0 var(--dl-grid-gap);
+  box-sizing: content-box;
+  &.tui-dlItemHovered {
+    height: auto;
+    margin-bottom: 0px;
+    .tui-dlGridRowContent {
+      padding-bottom: 400px;
+      overflow: visible;
+    }
+    .tui-dlGridRowContent.no-scroll {
+      overflow: hidden; /* Oculta los scrollbars */
+    }
+    .tui-dlHandle {
+      height: calc(100% - 400px);
+      z-index: 200;
+    }
+  }
+  &:hover {
+    .tui-dlHandle {
+      display: flex;
+    }
+  }
+  .tui-dlHandle {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2.3em;
+    padding: 0 0.5em;
+    bottom: 0;
+    display: none;
+    i {
+      align-content: center;
+      color: #fff;
+    }
+    &.tui-dlHandlePrev {
+      left: 0;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #06032f 100%);
+    }
+    &.tui-dlHandleNext {
+      right: 0;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #06032f 100%);
+    }
+  }
+}
+
+.tui-dlGridRowContent {
+  /*  👇  lo importante */
+  overflow-x: auto; /* Se permite scroll horizontal */
+  overflow-y: visible;
+  display: inline-flex;
+  /* Opcional: ocultar la barra sin desactivar el scroll */
+  -ms-overflow-style: none; /* IE / Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.tui-dlGridRowContent::-webkit-scrollbar {
+  /* Chrome */
+  display: none;
+}
+
+.tui-dlGridRowContent {
+  white-space: nowrap;
+  margin-left: calc(-1 * var(--dl-grid-gap)); /* Extend into the left margin */
+  margin-right: calc(
+    -1 * var(--dl-grid-gap)
+  ); /* Extend into the right margin */
+  padding-left: var(
+    --dl-grid-gap
+  ); /* Adjust padding to compensate for negative margin */
+  padding-right: var(
+    --dl-grid-gap
+  ); /* Adjust padding to compensate for negative margin */
+}
+.tui-dlGridItemContainer {
+  height: auto;
+  min-height: 158px;
+  position: relative;
+  display: inline-block;
+  width: 281.37px;
+  white-space: normal;
+  transition: transform 0.3s ease-in-out, z-index 0.3s;
+}
+.tui-dlGridItemContainer.more-views-courses {
+  height: 185px;
+}
+
+.tui-dlGridItemContainer,
+.tui-dlGridItem2 {
+  overflow: visible !important;
+}
+
+.more-views-courses {
+  padding: 0;
+}
+
+.courses-items {
+  /*padding: 0 .2vw;*/
+  padding: 0 16px 0 0;
+}
+div.courses-items[designitem="gridPrograms"] {
+  padding: 0 8px 0 0;
+}
+
+.tui-dlSliderItem {
+  width: 18%;
+}
+
+@media (min-width: 767.98px) {
+  .tui-dlGridRowSection {
+    margin-left: var(--dl-grid-gap);
+    margin-right: var(--dl-grid-gap);
+    color: #fff;
+  }
+}
+
+.tui-dlGridItemContainer:hover .tui-dlGridItem2 {
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.tui-dlGridRow .tui-dlGridItemContainer:first-child:hover .tui-dlGridItem2 {
+  transform-origin: top left;
+}
+
+
+.tui-dlGridRow .tui-dlGridItemContainer:last-child:hover .tui-dlGridItem2 {
+  transform-origin: top right;
+}
+
+/* 1) zoom */
+.tui-dlGridItem2:hover {
+  overflow: visible;      /* deja ver la info que está fuera del 160px */
+}
+.tui-dlGridItem2:hover .tui-dlGridItem2 { /* si tu escala está en .tui-dlGridItem2 */
+  z-index: 10;
+}
+
+/* 2) info-box */
+.tui-dlGridItem2:hover .tui-dlCourseInfoContainer {
+  display: flex;          /* o block, según tu diseño */
+}
+
+.tui-dlGridRow .tui-dlGridItemContainer:first-child:hover .tui-dlGridItem2 {
+  transform-origin: top left;
+}
+.tui-dlGridRow .tui-dlGridItemContainer:last-child:hover .tui-dlGridItem2 {
+  transform-origin: top right;
+}
+
+/* La sección entera necesita overflow visible */
+.tui-dlGridRowSection {
+  position: relative;   /* para que los absolutos se midan aquí */
+  overflow: visible !important;
+}
+
+/* La fila también */
+.tui-dlGridRow {
+  overflow: visible !important;
+}
+
+/* El contenedor scroll mantiene solo scroll horizontal */
+.tui-dlGridRowContent {
+  overflow-x: auto;     /* horizontal OK */
+  overflow-y: visible !important;  /* vertical visible */
+}
+
+.tui-dlGridItem1 {
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: top;
+  cursor: pointer;
+  &.zoom-effect {
+    transform: scale(1.3);
+    z-index: 10; /* Ensure this value is higher than other elements */
+    overflow: visible;
+    z-index: 1000;
+    .tui-dlCourseButton {
+      transform: scale(0.714);
+      transform-origin: bottom left;
+    }
+    .tui-dlCardCourseDuration {
+      transform: scale(0.714);
+      transform-origin: bottom right;
+      text-align: end;
+    }
+    &.card1, &.card2 {
+      display: none;
+    }
+  }
+  &.card-stack {
+    &:nth-child(1) {
+     /* transform: translate(0, 0);*/
+      z-index: 3;
+    }
+    &:nth-child(2) {
+      transform: translate(5px, -1px);
+      z-index: 2;
+    }
+    &:nth-child(3) {
+      transform: translate(12px, 0px);
+      z-index: 1;
+    }
+  }
+  &.card-stack.zoom-effect {
+    z-index: 4;
+  }
+  .tui-dlCourseInfoContainer {
+    color: #fff;
+    display: flex;
+    padding: 18px;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+    background-color: #06032f;
+    border-radius: 0 0 5px 5px;
+    .tui-dlCardCourseTitle {
+      margin-bottom: 16px;
+      font-size: 15px; /* Adjusted for scaling*/
+      line-height: 18px;
+      font-family: 'Roboto-Bold', sans-serif;
+
+    }
+    .tui-dlCardCourseCategories {
+      color: #f99;
+      font-size: 12px; /* Adjusted for scaling*/
+      line-height: 18px;
+      font-family: 'Roboto-Regular', sans-serif;
+    }
+  }
+}
+.first-item {
+  .tui-dlGridItem1 {
+    transform-origin: top left !important;
+  }
+}
+.last-item {
+  .tui-dlGridItem1 {
+    transform-origin: top right !important;
+  }
+}
+.tui-dlBoxartImage {
+  width: 281.37px;
+  height: 158px;
+}
+div.tui-dlGridItem1[designitem="gridInProgress"] .progress-bar-overlay {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  left: 5px;
+  right: 5px;
+  border: 1px solid white;
+  overflow: hidden;
+  height: 20px;
+}
+div.tui-dlGridItem1[designitem="gridInProgress"] .progress-bar-overlay .progress-bar {
+  height: 100%;
+  background-color: white;
+  transition: width 0.3s ease;
+  position: absolute;
+}
+div.tui-dlGridItem1[designitem="gridInProgress"] .progress-bar-overlay .progress-text {
+  color: #f37021;
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  display: flow;
+}
+div.tui-dlGridItem1[designitem="gridInProgress"] .sombra {
+  /* background: red; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to top, var(--dl-principal) 0%, transparent 100%);
+}
+/*div[designitem="gridPrograms"] .tui-dlBoxartImage {
+  width: 100%;
+  height: 158px;
+  display: block;
+}*/
+div[designitem="gridPrograms"] .card {
+  box-shadow: 6px 5px 7px 0 #00000070;
+  border-radius: 7px;
+  height: 330px;
+}
+div[designitem="gridPrograms"] .card1{
+  height: 158px !important;
+  position: absolute;
+  /*bottom: -25px;*/
+  z-index: -2;
+  width: 100%;
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px;
+  background: #656388;
+  left: 0px;
+  @media screen and (max-width: 767.98px) {
+    height: 115px !important;
+  }
+}
+div[designitem="gridPrograms"] .card1 img, div[designitem="gridPrograms"] .card2 img{
+  display: none;
+}
+div[designitem="gridPrograms"] .card2{
+  height: 158px !important;
+  position: absolute;
+  /*bottom: -50px;*/
+  z-index: -2;
+  width: 100%;
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px;
+  background: #36335B;
+  left: 0;
+  @media screen and (max-width: 767.98px) {
+    height: 115px !important;
+  }
+}
+div[designitem="gridInProgress"] .card1, div[designitem="gridInProgress"] .card2,
+div[designitem="gridCourses"] .card1, div[designitem="gridCourses"] .card2{
+  display: none;
+}
+.progress-bar-overlay {
+  display: none;
+}
+div.tui-dlGridItem1.zoom-effect[designitem="gridInProgress"].progress-bar-overlay {
+  display: none !important;
+}
+div.courses-items[designitem="gridPrograms"]{
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.tui-dlGridItem1.card-stack:nth-child(1) {
+  box-shadow: 6px 5px 7px 0 #00000070;
+}
+.tui-topLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--dl-secundario);
+  color: #fff;
+  padding: 7px 8px;
+  border-radius: 5px 0 5px 0;
+  text-align: center;
+  line-height: 1rem;
+  font-weight: bold;
+  min-height: 36px;
+  align-content: center;
+  &__top {
+    font-size: 12px;
+  }
+  &__moreview {
+    font-size: 10px;
+  }
+  &__new {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.tui-learningCard {
+  /* 
+      Usamos un grid de 3 columnas:
+      - Columna 1: Imagen
+      - Columna 2: Título/Descripción
+      - Columna 3: Progreso/Estado/Botón
+  */
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1.5rem;
+
+  /* Espaciado vertical y la línea gris inferior */
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #ccc; 
+
+  /* Elimina la línea en el último elemento */
+  &:last-child {
+      border-bottom: none;
+  }
+
+  /* Imagen */
+  &__image {
+      img {
+      width: 178px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 4px;
+      }
+  }
+
+  /* Título y descripción */
+  &__info {
+      h4 {
+        margin: 0 0 0.25rem;
+        color: #fff; /* Ajusta según tu color de texto */
+        @media screen and (max-width: 767.98px) {
+          font-size: 1.5rem; /* Ajusta según tu tamaño de fuente */
+        }
+      }
+      p {
+        margin: 0;
+        color: #ccc; /* Ajusta según tu color de texto */
+        max-height: 80px;
+        overflow: hidden;
+        @media screen and (max-width: 767.98px) {
+          font-size: 12px; /* Ajusta según tu tamaño de fuente */
+          max-height: -webkit-fit-content;
+          max-height: -moz-fit-content;
+          max-height: fit-content;
+        }
+      }
+      .tui-showMoreButton {
+        background-color: var(--dl-principal);
+        color: #fff;
+        border: none;
+        padding: 0.3rem 0.6rem;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.875rem;
+        transition: background-color 0.3s ease;
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
+        &:hover {
+          background-color: var(--dl-principal2);
+          color: var(--dl-principal);
+        }
+      }
+  }
+
+  /* Sección de acciones (progreso + botón) */
+  &__actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 150px;
+      align-self: center;
+
+      /* Progreso y estado */
+      &__progressStatus,
+      .tui-learningCard__progressStatus {
+        margin-bottom: 0.5rem;
+        text-align: right;
+        span {
+            color: #fff; /* Ajusta según tu color de texto */
+            @media screen and (max-width: 767.98px) {
+              font-size: 12px; /* Ajusta según tu tamaño de fuente */
+            }
+        }
+      }
+
+      /* Barra de progreso */
+      &__progressBar,
+      .tui-learningCard__progressBar {
+        width: 120px;
+        height: 4px;
+        background-color: #FFFFFF80;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 0.25rem;
+        box-shadow: 0px 0px 7.02px 0.76px #75E06480;
+        @media screen and (max-width: 767.98px) {
+            width: 100px;
+        }
+
+        &__progressFill,
+        .tui-learningCard__progressFill {
+            height: 100%;
+            background: linear-gradient(90deg, #2BB673 0%, #99CCFF 100%);
+            transition: width 0.3s;
+        }
+      }
+
+      /* Botón "Ir al curso" */
+      &__button,
+      .tui-learningCard__button {
+        margin: 6px 0;
+        background-color: #FFF;
+        color: var(--btn-prim-accent-color);
+        text-decoration: none;
+        padding: 0.8rem 1rem;
+        border-radius: 4px;
+        align-self: start;
+
+        @media screen and (max-width: 767.98px) {
+          padding: 0.5rem .8rem;
+          font-size: 12px;
+        } 
+        
+        &:hover {
+            background-color: #4f4f85;
+        }
+      }
+
+      &.tui-programActions {
+        .tui-learningCard__progressBar {
+          width: 120px;
+          @media screen and (max-width: 767.98px) {
+            width: 100px;
+          }
+        }
+      }
+  
+      &.tui-courseActions {
+        .tui-learningCard__progressBar {
+          width: 95px;
+          @media screen and (max-width: 767.98px) {
+            width: 80px;
+          }
+        }
+      }
+  }
+
+  @media (max-width: 767.98px) {
+    grid-template-columns: auto 1fr;
+    row-gap: 1rem;
+
+    &__actions {
+      margin-top: 1rem;
+    }
+  }
+  
+}
+
+.tui-learningList {
+  width: 80%;
+  margin: -70px auto 0 auto;
+  position: relative;
+
+  h2 {
+    @media (max-width: 767.98px) {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    width: 90%;
+    margin: -50px auto 0 auto;
+  }
+}
+

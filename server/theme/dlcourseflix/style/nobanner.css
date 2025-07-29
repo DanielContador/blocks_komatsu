@@ -1,0 +1,185 @@
+@import './internal.css';
+
+body.dl-dark-mode.menuflex .breadcrumb-button a {
+    color: var(--btn-text-color-hover);
+    text-decoration: none;
+    background: var(--btn-bg-color-hover);
+    border-color: var(--btn-border-color-hover);
+    box-shadow: var(--btn-shadow-hover);
+    padding: calc((var(--btn-min-height) - var(--btn-font-size) * var(--btn-line-height)) / 2 - var(--btn-border-width)) var(--btn-padding-h);
+    border: var(--btn-border-width) solid;
+    border-radius: var(--btn-radius);
+}
+
+body.menuflex #page {
+    margin-top: 120px;
+}
+
+/* Ancho por defecto del ul.topics */
+body.dl-dark-mode.menuflex .nobanner {
+    width: 75%;
+    padding-left: 64px;
+    float: left;
+}
+
+body.dl-dark-mode.menuflex.empty-region-side-post .nobanner {
+    width: 100%;
+    padding-right: 187px;
+
+}
+
+body.menuflex #block-region-side-post {
+    float: left;
+    width: 25%;
+    position: unset;
+    right: 0;
+    top: 0;
+    margin-right: 0;
+    margin-top: 16px;
+    height: auto;
+    overflow-y: hidden;
+    padding-right: 64px
+}
+
+/* Aseguramos que el contenedor padre contenga a ambos floats */
+body.menuflex #page .row.contenido::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body.dl-dark-mode.menuflex .scorm-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+ul.nav.nav-tabs li.active a {
+    color: var(--dl-background);
+}
+
+ul.nav.nav-tabs li a, #scormtablecontainer table th a {
+    color: var(--dl-graygraph);
+}
+
+div#scorm_toc_toggle #custom-icon {
+    background: transparent;
+    border: 1px solid var(--dl-graygraph);
+    color: var(--dl-principal2);
+}
+
+/*Scorm Player*/
+/*Left Menu*/
+#page-mod-scorm-player #scormpage #scorm_toc {
+    overflow-y: hidden !important;
+    border: 1px solid var(--dl-graygraph) !important;
+    border-radius: 12px 0 12px 12px;
+    height: auto;
+}
+
+#page-mod-scorm-player #scormpage #scorm_toc_title {
+    padding: 11px !important;
+    border-bottom: 1px solid var(--dl-graygraph) !important;
+}
+
+#page-mod-scorm-player #scormpage #scorm_tree .yui3-treeview-node a {
+    color: #FFF !important;
+    text-overflow: ellipsis !important;
+    font-family: 'Roboto-Regular', sans-serif !important;
+    font-size: 11.444px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 22.888px !important;
+    background-color: transparent !important;
+}
+
+#page-mod-scorm-player #scormpage #scorm_tree {
+    padding: 11px;
+    border-radius: 0;
+}
+
+#page-mod-scorm-player #scormpage #scorm_tree .yui3-treeview-node.yui3-treeview-selected,
+.yui3-skin-sam .yui3-treeview-selected:focus > .yui3-treeview-row,
+.yui3-skin-sam .yui3-treeview-selected > .yui3-treeview-row,
+.yui3-skin-sam .yui3-treeview-children[aria-multiselectable="true"] .yui3-treeview-selected > .yui3-treeview-row,
+.yui3-skin-sam .yui3-treeview-selected > .yui3-treeview-row:hover {
+    background-color: var(--dl-secundario2) !important;
+    border-color: var(--dl-secundario2) !important;
+    color: var(--dl-graygraph) !important;
+}
+
+#page-mod-scorm-player #scormpage #scorm_tree .yui3-treeview-row {
+    background: transparent !important;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 500;
+    font-size: 11.44px;
+    line-height: 22.89px;
+    letter-spacing: 0;
+    height: 22px;
+
+}
+
+#page-mod-scorm-player #scormpage li.yui3-treeview-has-children > div.yui3-treeview-row > span.yui3-treeview-icon {
+    display: none !important;
+}
+
+li > .yui3-treeview-row > .yui3-treeview-indicator s {
+    display: none !important;
+}
+
+li > .yui3-treeview-row > .yui3-treeview-indicator {
+    width: 22.888px;
+    height: 22.888px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.yui3-skin-sam .yui3-treeview-row > .yui3-treeview-indicator:after {
+    content: '+';
+    width: 14px;
+    height: 14px;
+    background: white;
+    padding: 0px;
+    font-size: 14px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--dl-background);
+    border-radius: 2px;
+}
+
+.yui3-skin-sam .yui3-treeview-open .yui3-treeview-row > .yui3-treeview-indicator:after {
+    content: '-';
+    width: 14px;
+    height: 14px;
+    background: white;
+    padding: 5px;
+    font-size: 26px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--dl-background);
+    border-radius: 2px;
+}
+
+yui3-treeview-node.yui3-treeview-can-have-children.yui3-treeview-has-children {
+    display: none;
+}
+
+/*MOD Quiz*/
+
+#page-totara-competency-profile-index #region-main {
+    width: 100% !important;
+}
+
+
+

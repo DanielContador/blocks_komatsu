@@ -1,0 +1,16 @@
+query local_dlservices_mycurrent_coursesitems($spage: Int, $notprogress: Boolean){
+    local_dlservices_mycurrent_coursesitems(spage: $spage, notprogress: $notprogress){
+        items{
+            id
+            category
+            shortname
+            fullname
+            link
+            imageUrl
+            duration
+            progress
+            top
+            gifImage
+        }
+    }
+}

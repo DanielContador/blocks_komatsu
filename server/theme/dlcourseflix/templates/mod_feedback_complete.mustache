@@ -1,0 +1,53 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template 'theme_dlcourseflix'; // Full name of the plugin (used for diagnostics)/mod_feedback_complete.mustache
+
+    Template purpose and description.
+
+    Classes required for JS:
+    * none
+
+    Data attributes required for JS:
+    * none
+
+    Context variables required for this template:
+    * none
+
+    Example context (json):
+    {
+    }
+}}
+
+<div class="courseflix-feedback-title-container">
+    <div class="courseflix-feedback-title">
+        <h1>{{feedbackname}}</h1>
+        <div class="feedback-sended-answers">
+            <p>Respuestas enviadas</p>
+        </div>
+    </div>
+    <input id="completed-radio-disabled" type="radio" disabled="">
+    <label id="completed-radio-disabled-label" for="completed-radio-disabled">
+        <i class="fa-solid fa-check" style="color: #FFF"></i>
+    </label>
+</div>
+
+<style>
+    .dl_feedback_name {
+        display: none !important;
+    }
+</style>

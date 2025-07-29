@@ -1,0 +1,27 @@
+:root {
+  --azul-pincipal: rgba(20, 10, 154, 1);
+  --amarillo: rgba(255, 200, 47, 1);
+  --blanco: rgba(255, 255, 255, 1);
+  --negro: rgba(0, 0, 0, 1);
+  --azul-1: rgba(12, 6, 92, 1);
+  --azul-2: rgba(20, 10, 154, 1);
+  --azul-3: rgba(51, 102, 204, 1);
+  --azul-4: rgba(102, 153, 255, 1);
+  --azul-5: rgba(153, 204, 255, 1);
+  --rojo-principal: rgba(213, 43, 30, 1);
+  --rojo-1: rgba(190, 20, 15, 1);
+  --rojo-2: rgba(213, 43, 30, 1);
+  --rojo-3: rgba(255, 72, 72, 1);
+  --rojo-4: rgba(255, 110, 110, 1);
+  --rojo-5: rgba(255, 153, 153, 1);
+  --verde: rgba(43, 182, 115, 1);
+  --gris-1: rgba(27, 35, 42, 1);
+  --gris-2: rgba(110, 117, 122, 1);
+  --gris-3: rgba(209, 212, 211, 1);
+  --gris-4: rgba(246, 246, 246, 1);
+  --text-light-primary: rgba(255, 255, 255, 1);
+  --white: rgba(255, 255, 255, 1);
+  --x-cxv: 0px 4px 11.399999618530273px 0px rgba(0, 102, 255, 0.35);
+  --collection-1-RUTA: rgba(58, 55, 111, 1);
+  --collection-1-fondo-1: rgba(6, 3, 47, 1);
+}

@@ -1,0 +1,90 @@
+body.dl-dark-mode h2{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 36px;
+    line-height: 58px;
+    color: var(--dl-principal2);
+}
+
+body.dl-dark-mode .tw-evidence__header .tw-evidence__header_titleBtns_buttons{
+    margin: auto;
+}
+
+body.dl-dark-mode .tw-evidence__header a, body.dl-dark-mode .mform .fitem.moreless-actions .felement a{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+body#page-totara-evidence-create .tw-evidence__header a,
+body.dl-dark-mode .mform .fitem.moreless-actions .felement a,
+body.dl-dark-mode div.tw-evidence .tw-evidence__header a.tw-evidence__header_backLink{
+    color: var(--dl-graygraph);
+}
+
+body.dl-form div.tw-evidence__select_type_info.tw-evidence__content_container{
+    background-color: var(--dl-background);
+    color: var(--dl-principal2);
+    border-radius: 11px;
+    padding: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+body.dl-form div.tw-evidence__select_type_info.tw-evidence__content_container a, body.dl-form input#id_submitbutton, body.dl-form input#id_submitbutton:active{
+    background-color: var(--dl-principal2);
+    color: var(--dl-background);
+    border-radius: 4px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+body.dl-form .fitem>fieldset>legend .legend, a.fp-path-folder-name{
+    color: var(--dl-principal2);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+body.dl-dark-mode .mform legend a{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 24px;
+    line-height: 35px;
+    color: var(--dl-graygraph);
+}
+body.dl-dark-mode .tfont-var-info_filled:before{
+    color: var(--dl-graygraph);
+}
+
+body.dl-dark-mode.menuflex span.ft-state-success{
+    background: transparent;
+}
+
+.progress .bar, .dndupload-progress-outer .bar{
+    background-color: var(--dl-variante3);
+}
+
+body.dl-dark-mode table tbody tr td .progress{
+    border: 1px solid var(--dl-graygraph);
+}
+
+div#my-teammembers-content p a{
+    color: var(--dl-graygraph);
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+body.dl-dark-mode .tw-evidence__content_container{
+    background: transparent;
+}
+
+body.dl-dark-mode .tw-evidence__content_container a.icon,
+body.dl-dark-mode .tf_element_input a{
+    color: var(--dl-graygraph);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+

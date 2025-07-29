@@ -1,0 +1,5 @@
+{
+  "component": "dl",
+  "vendor": "dl",
+  "dependencies": ["tui_charts"]
+}

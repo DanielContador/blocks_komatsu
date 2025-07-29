@@ -1,0 +1,122 @@
+#page-login-content #login_hero-image-bi {
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#page-login-content #login_hero-image {
+    display: none;
+}
+
+#page-login-content #dl-gradient-overlay-login {
+    /*background: radial-gradient(73.21% 55.27% at 50% 50%, rgba(6, 3, 47, 0.05) 0%, rgba(6, 3, 47, 0.5) 68%) !* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected *!;*/
+    background: radial-gradient(rgba(4, 18, 31, 0.6), #04121F) !important;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#page-login-content .icon.dl-footermark {
+    width: fit-content;
+    height: 45px;
+    position: absolute;
+    bottom: 5px;
+}
+
+#page-footer .row.dl-center {
+    display: none;
+}
+
+#page-login-content .dl-footermark-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+#page-login-content .loginpanel {
+    background: #00000080;
+    box-shadow: 0px 4px 28.5px 0px #0000001A;
+    padding: 36px;
+    border-radius: 4px;
+    margin-top: 25%;
+}
+
+#page-login-content .loginbox .loginform .form-input input[type="text"],
+#page-login-content .loginbox .loginform .form-input input[type="password"] {
+    background: #83838344;
+    border: 1px solid #FFFFFF80;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+#page-login-content .loginbox .loginform .form-input input[type="text"]::placeholder,
+#page-login-content .loginbox .loginform .form-input input[type="password"]::placeholder,
+#page-login-content .loginbox .forgetpass a {
+    color: #FFF !important;
+}
+
+@media (min-width: 1492px) {
+    .loginbox.onecolumn {
+        left: 37%;
+    }
+
+    .loginbox.onecolumn {
+        width: 26%;
+    }
+}
+
+#page-login-index #page-footer,
+#page-login-index #page-footer .footer-column {
+    margin-top: 0;
+}
+
+#page-login-content .loginbox .dl-loginbtn {
+    color: var(--btn-prim-accent-color);
+    background: var(--dl-principal) !important;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#page-login-content .loginbox .potentialidp {
+    color: var(--btn-prim-accent-color);
+    background: #ffffff66 !important;
+    border-radius: 4px;
+}
+
+#page-login-content .tw-oauth2-login-button-microsoft > img {
+    width: 100%;
+    object-fit: contain;
+    height: 25px;
+}
+
+#page-login-content .loginsub .potentialidp {
+    width: 100%;
+}
+
+body.notloggedin .totaraNav_prim--toggleNav {
+    display: none;
+}
+
+#page-login-content .loginbox .rememberusername {
+    margin-right: 15px;
+}
+
+#dl-login-logo {
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+}
+
+@media (max-width: 767.86px) {
+    .loginbox.onecolumn {
+        margin: auto;
+    }
+}

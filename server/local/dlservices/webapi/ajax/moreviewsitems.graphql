@@ -1,0 +1,13 @@
+query local_dlservices_moreviewsitems($limit: Int, $recommended: Boolean) {
+    local_dlservices_moreviewsitems(limit: $limit, recommended: $recommended) {
+        items{
+            id
+            category
+            shortname
+            fullname
+            link
+            imageUrl
+            duration
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.tui-dlCourseButton a {
+    color: var(--dl-principal) !important;
+}
+
+.tui-dlCourseCarousel .tui-dlCarouselInner {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+}
+
+body {
+    overflow-x: hidden;
+}

@@ -1,0 +1,15 @@
+.generaltable tbody tr {
+    background-color: var(--dl-background) !important;
+}
+
+.generaltable tbody tr a {
+    color: #ff4848;
+}
+
+.generaltable .lastrow {
+    background-color: var(--dl-graygraph) !important;
+}
+
+.generaltable .lastrow a {
+    color: var(--dl-principal);
+}

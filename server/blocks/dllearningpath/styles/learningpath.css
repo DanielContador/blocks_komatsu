@@ -1,0 +1,352 @@
+.block-learning-path {
+    background: var(--collection-1-fondo-1);
+}
+
+.learning-title {
+    color: var(--blanco);
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.frame {
+    background: var(--collection-1-fondo-1);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.odd {
+    width: 200px;
+    height: 100%;
+    margin: 0 70px;
+}
+
+.section-odd {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.section-odd .stage {
+    width: 200px;
+    position: relative;
+    top: 80px;
+}
+
+.section-even .stage {
+    width: 200px;
+    position: relative;
+}
+
+.section-even {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.section-even .odd {
+    width: 205px;
+}
+
+.section-odd .odd {
+    width: 205px;
+}
+
+.stage_courses .line:last-child {
+    display: none;
+}
+
+.section-even .stage_courses {
+    position: relative;
+    bottom: 120px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-odd .stage_courses {
+    top: 140px;
+    position: relative;
+    height: 180px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stage {
+    width: 150px;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+}
+
+.stage_number {
+    color: var(--collection-1-RUTA);
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.stage_complete_number {
+    color: var(--blanco);
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.stage_name {
+    color: var(--collection-1-RUTA);
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-size: 15px;
+    text-align: center;
+    line-break: auto
+}
+
+.stage_complete_name {
+    color: var(--blanco);
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-size: 15px;
+    text-align: center;
+    line-break: auto
+}
+
+.course_name {
+    color: var(--negro);
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-size: 12px;
+    text-align: center;
+    line-break: auto
+}
+
+.course_complete {
+    color: var(--blanco);
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-size: 12px;
+    text-align: center;
+    line-break: auto
+}
+
+.current_course {
+    color: var(--azul-pincipal);
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-size: 12px;
+    text-align: center;
+    line-break: auto
+}
+
+.item_course {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 1px 1px 10px;
+    background-color: var(--collection-1-RUTA);
+    border-radius: 28.66px;
+    min-height: 50px;
+    width: 250px;
+}
+
+.item_course_current {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 1px 1px 10px;
+    background-color: var(--blanco);
+    border-radius: 28.66px;
+    min-height: 50px;
+    width: 250px;
+}
+
+.modal-body .item_course {
+    width: 100% !important;
+}
+
+.modal-body .item_course_current {
+    width: 100% !important;
+}
+
+.line {
+    width: 200px;
+    margin: 6px 0;
+}
+
+.modal-body .line {
+    width: 100% !important;
+}
+
+.active-vector {
+    width: 324px;
+}
+
+.odd-vector {
+    width: 324px;
+}
+
+.even-vector {
+    transform: rotateX(180deg);
+    width: 324px;
+}
+
+.line-container {
+    position: relative;
+    display: flex;
+    left: 150px;
+}
+
+.stage-modal {
+    background: var(--collection-1-fondo-1);
+}
+
+.stage-modal h5 {
+    color: #FFF;
+}
+
+.elipse {
+    width: 20px;
+    position: relative;
+}
+
+.more-courses:hover {
+    background: var(--gris-2);
+}
+
+.cf-scroll {
+    height: 70%;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.scroll-left {
+    cursor: pointer;
+    color: transparent;
+    font-size: 2.3em;
+}
+
+.scroll-right {
+    cursor: pointer;
+    color: transparent;
+    font-size: 2.3em;
+}
+
+.scroll-left:hover {
+    color: white;
+}
+
+.scroll-right:hover {
+    color: white;
+}
+
+.scroll-container-left {
+    height: 100%;
+    align-content: center;
+    cursor: pointer;
+    width: 5%;
+    z-index: 3;
+}
+
+.scroll-container-left:hover .scroll-left {
+    color: white;
+}
+
+.scroll-container-right {
+    height: 100%;
+    align-content: center;
+    cursor: pointer;
+    width: 5%;
+    z-index: 3;
+}
+
+.scroll-container-right:hover .scroll-right {
+    color: white;
+}
+
+.stage_courses a {
+    width: 100%;
+}
+
+.stage_courses button {
+    width: 50%;
+}
+
+.lp-card {
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 50px;
+    /*left: 240px;*/
+    transition: 1s;
+    z-index: 1;
+}
+
+.lp-course {
+    transition: 1s;
+}
+
+.lp-course:hover .lp-card {
+    width: auto;
+    overflow: auto;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(13, 13, 92, 0.71);
+    position: absolute;
+}
+
+.lp-card-body {
+    background: var(--collection-1-RUTA);
+    border-radius: 1rem;
+}
+
+.lp-card-image {
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.lp-card-body .card-body {
+    min-height: 100px;
+    width: 300px;
+}
+
+.lp-card-body .card-title {
+    padding-top: 20px;
+}
+
+.lp-card-name {
+    margin-top: 10px;
+}
+
+.lp-card-time {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.71);
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .learning-title {
+        font-size: 20px;
+    }
+
+    .block_dllearningpath .frame {
+        overflow: scroll;
+    }
+
+    .stage_complete_number, .stage_number {
+        font-size: 50px;
+    }
+
+    .stage_complete_name, .stage_name {
+        font-size: 12px;
+    }
+
+    .item_course_current, .item_course {
+        width: 200px;
+    }
+}

@@ -1,0 +1,81 @@
+
+
+:root {
+  --dl-grid-gap: 65px;
+}
+
+
+
+/* Add any additional global styles here */
+.flex {
+    display: flex;
+}
+.relative {
+    position: relative;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.table {
+    display: table;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.rounded-lg {
+    border-radius: 4.329px; /* Adjust as needed */
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-end {
+    align-items: flex-end;
+}
+.w-full {
+    width: 100%;
+}
+.mb-12 {
+    margin-bottom: var(--gap-12);
+}
+
+/*body, .block {
+    background-color: var(--dl-background) !important;
+    color: white !important;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+}
+
+.totaraNav{
+    position: absolute;
+    width: 100%;
+}
+
+.totaraNav ul{
+    background: none;
+}
+
+.totaraNav nav.totaraNav_prim {
+    background: linear-gradient(to bottom,
+            var(--dl-background) 20%,  !* Color inicial ocupa el 20% del espacio *!
+            rgba(0, 0, 0, 0.5) 50%,    !* Punto intermedio con un color semi-transparente *!
+            transparent 80%);
+}
+.totaraNav_prim>.container-fluid, .totaraNav_prim--list_item.totaraNav_prim--list_item_selected a{
+    font-weight: bold;
+}
+
+.totaraNav nav.totaraNav_sub, ul.totaraNav_prim--list.totaraNav_prim--list_hideMobile {
+    background: transparent;
+}
+
+.totaraNav_prim--list_item .totaraNav_prim--list_item_link, .totaraNav_prim--side span.flex-icon::before,
+.totaraNav_prim--side .usermenu .toggle-display{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.tui-dlCourseCarousel.slide {
+    margin-right: -32px;
+    margin-left: -32px;
+}*/

@@ -1,0 +1,77 @@
+@import './styles.css';
+
+body.dl-dark-mode div.container-fluid.breadcrumb-container {
+    background: transparent;
+}
+
+body.dl-dark-mode.catalog .container-fluid {
+    padding: var(--gap-3) 0;
+}
+
+
+body.dl-dark-mode.catalog .totaraNav .container-fluid {
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+body.catalog .totaraNav nav.totaraNav_prim {
+    background: linear-gradient(to bottom,
+    var(--dl-background) 0%,
+    transparent 100%);
+}
+
+body.catalog .totaraNav nav.totaraNav_sub {
+    background: transparent;
+    display: none;
+}
+
+body.catalog .totaraNav_prim--list_item .totaraNav_prim--list_item_link,
+body.catalog .totaraNav_prim--side span.flex-icon::before,
+body.catalog .totaraNav_prim--side .usermenu .toggle-display {
+    color: #ffffff;
+    opacity: 1;
+}
+
+body.catalog .totaraNav_prim--side .moodle-actionmenu span.flex-icon::before,
+body.catalog .totaraNav_prim--side #quickaccess-popover-content span.flex-icon::before {
+    color: #000000;
+    opacity: 0.3;
+}
+
+body.catalog .totaraNav_prim--list_item .totaraNav_prim--list_item_link:hover {
+    color: #ffffff;
+    opacity: 1;
+}
+
+body.catalog .tui-dlCourseCarousel.slide {
+    margin-right: -16px;
+    margin-left: -32px;
+}
+
+#block-region-bottom {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* Responsive design */
+@media (min-width: 992px) {
+    body.catalog .totaraNav ul {
+        background: none;
+    }
+}
+
+@media (max-width: 991.86px) {
+    body.catalog .totaraNav ul {
+        /* background: var(--dl-background); */
+    }
+
+    body.catalog .totaraNav_prim--list_item .totaraNav_prim--list_item_link {
+        color: #000000;
+        opacity: 0.5;
+    }
+
+    body.dl-dark-mode.catalog .totaraNav .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

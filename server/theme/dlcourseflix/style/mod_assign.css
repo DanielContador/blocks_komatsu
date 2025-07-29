@@ -1,0 +1,68 @@
+.generaltable tr {
+    background-color: var(--dl-background, #06032F) !important;
+}
+
+.generaltable tr a {
+    color: #ff4848;
+}
+
+.generaltable tr textarea {
+    background: var(--dl-background, #06032F);
+    border-radius: 11px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    color: #FFF !important;
+}
+
+.path-mod-assign td.submissionnotgraded, .path-mod-assign div.submissionnotgraded {
+    color: white !important;
+    background-color: var(--dl-background, #06032F) !important;
+}
+
+.lastrow .commentscontainer .comment-link {
+    color: white !important;
+}
+
+.submissionstatustable .submissionaction .singlebutton form input {
+    color: var(--Azul-PINCIPAL, #140A9A);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.submissionstatussubmitted {
+    color: #FFF !important;
+    background-color: transparent !important;
+}
+
+#page-mod-assign-editsubmission .filemanager .fp-navbar,
+#page-mod-assign-editsubmission .filemanager-container {
+    background-color: var(--dl-background);
+}
+
+#page-mod-assign-editsubmission .filemanager .fp-navbar .fp-pathbar a,
+#page-mod-assign-editsubmission .ftags a {
+    color: var(--dl-principal2);
+}
+
+#page-mod-assign-grading tbody tr td {
+    background-color: var(--dl-background);
+}
+
+#page-mod-assign-grading .no-overflow {
+    scrollbar-color: var(--dl-graygraph) var(--dl-background);
+}
+
+#page-mod-assign-grading select {
+    background: var(--dl-background);
+    border-radius: 11px;
+    border: 1px solid var(--dl-graygraph);
+    font-family: 'Roboto-Regular', sans-serif;
+    color: var(--dl-principal2);
+}
+
+#page-mod-assign-grading span {
+    color: var(--dl-graygraph);
+}

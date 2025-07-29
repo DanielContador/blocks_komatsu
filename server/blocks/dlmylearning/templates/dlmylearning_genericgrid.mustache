@@ -1,0 +1,77 @@
+<div id="dlmylearning_wrapper" class="hidden">
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+{{#cardsitems}}
+    {{#hasitems}}
+        <div class="dl-grid-carrousel">
+            <div id="dl-grid-title" class="p-10">
+                <h3 class="fw-600">{{gridheader}}</h3>
+            </div>
+        </div>
+
+        <div class="{{ carousel }} slick2" data-cards-number={{countcards}}>
+            {{#moduleitems}}
+            <div class="card">
+                <div class="card-header">
+                    <div class="dl-item-state">
+                        {{# completed}}
+                            {{{completed_icon}}}
+                            {{#str}}statecomplete, block_dlmylearning{{/str}}
+                        {{/completed}}
+                        {{# inprogress}}
+                            {{{inprogress_icon}}}
+                            {{#str}}stateinprogress, block_dlmylearning{{/str}}
+                        {{/inprogress}}
+                        {{# notstarted}}
+                            {{{notstarted_icon}}}
+                            {{#str}}statenotstarted, block_dlmylearning{{/str}}
+                        {{/notstarted}}
+                    </div>
+                    
+                    <a href="{{url}}">
+                        <div class="card-header-image" style="background-image: url({{image}});"></div>
+                    </a>
+                    {{#expiring}}
+                        <div class="tobeat-tag fw-600">
+                            {{#str}}expiring, block_dlmylearning{{/str}}
+                        </div>
+                    {{/expiring}}
+                    
+                </div>
+                <div class="card-body p-15">                        
+                    <div class="card-content">
+                        <div class="dl-item-fullname">
+                            <h4 class="fw-700">{{fullname}}</h4>
+                        </div>
+                        <div class="card-content-footer"> 
+                            <div class="percent">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%"></div>
+                                </div>
+                                <span class="dltext-progress">{{progress}}%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            {{/moduleitems}}  
+        </div>
+        {{#js}}
+        require(['block_dlmylearning/carousel'], function (carousel_grid) {
+            $('div#dlmylearning_wrapper').removeClass('hidden');
+            $('div#dlmylearning_wrapper').css('display','block');
+            carousel_grid.configSlidestoShow("{{ region }}","{{ carousel }}");
+        });  
+        {{/js}}
+    {{/hasitems}}
+{{/cardsitems}}
+</div>
+
+{{#js}}
+
+$( window ).on( "orientationchange", function( event ) {
+    location.reload();
+});
+
+{{/js}}
+
+

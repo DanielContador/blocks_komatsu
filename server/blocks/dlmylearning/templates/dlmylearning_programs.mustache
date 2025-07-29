@@ -1,0 +1,85 @@
+<div id="dlmylearning_wrapper_programs" class="hidden">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    <div id="dllearning-program-header" class="d-flex mb-20">
+        <div id="dlmylearning-program-title" class="p-10 mr-15">
+            <h3 class="fw-600">{{#str}}recentprograms, block_dlmylearning{{/str}}</h3>
+        </div>
+        <div id="dlmylearning-gotoprograms-top" class="dlbtn-a1 d-xs-none">
+            <a href="{{programs_url}}">{{#str}}gotoprograms, block_dlmylearning{{/str}}</a>
+        </div>
+    </div>
+    {{#has_programs}}
+        <div class="dl-card-block">
+            <div class="{{ carousel_programs }} slick2" data-cards-number={{countcards}}>
+                {{#myprograms}}
+                <div class="card">
+                    <div class="card-header">
+                        <div class="dl-item-state">
+                            {{# completed}}
+                                {{{completed_icon}}}
+                                {{#str}}statecomplete, block_dlmylearning{{/str}}
+                            {{/completed}}
+                            {{# inprogress}}
+                                {{{inprogress_icon}}}
+                                {{#str}}stateinprogress, block_dlmylearning{{/str}}
+                            {{/inprogress}}
+                            {{# notstarted}}
+                                {{{notstarted_icon}}}
+                                {{#str}}statenotstarted, block_dlmylearning{{/str}}
+                            {{/notstarted}}
+                        </div>
+                        <a href="{{url}}">
+                            <div class="dl-program-card-image" style="background-image: url({{image}});"></div>
+                        </a>
+
+                        {{#expiring}}
+                            <div class="tobeat-tag fw-600">
+                                {{#str}}expiring, block_dlmylearning{{/str}}
+                            </div>
+                        {{/expiring}}
+                    </div>
+                    <div class="card-body p-15">                        
+                        <div class="card-content">
+                            <div class="dl-program-card-info">
+                                <div class="">
+                                    <h4 class="dlprogramname fw-700">{{fullname}}</h4>
+                                </div>
+                                <p class="description">{{description}}</p>
+                            </div>
+                            <div class="card-content-footer"> 
+                                <div class="percent">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%"></div>
+                                    </div>
+                                    <span class="dltext-progress">{{progress}}%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                {{/myprograms}}
+            </div>
+        </div>
+
+        <div id="dlprogram-footer" class="dlgrid-bnt-footer">
+            <div id="dlmylearning-gotoprograms-bottom" class="dlbtn-a1 d-xs-block d-none">
+                <a href="{{programs_url}}">{{#str}}gotoprograms, block_dlmylearning{{/str}}</a>
+            </div>
+        </div>  
+    {{/has_programs}}
+</div>
+
+
+{{#js}}
+    require(['block_dlmylearning/carousel'], function (carousel_grid) {
+        $('div#dlmylearning_wrapper_programs').removeClass('hidden');
+        $('div#dlmylearning_wrapper_programs').css('display','block');
+    
+        carousel_grid.configSlidestoShow("{{ region }}","{{ carousel_programs }}");
+    });  
+    
+    $( window ).on( "orientationchange", function( event ) {
+        location.reload();
+    });
+    
+{{/js}}

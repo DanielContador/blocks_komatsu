@@ -1,0 +1,51 @@
+type local_dlservices_item {
+    id: core_id
+    shortname(format: core_format = PLAIN): String!
+    fullname(format: core_format = PLAIN): String!
+    summary(format: core_format = MOBILE): String!
+    link: String!
+    imageUrl: String!
+    progress: Float!
+    category: String!
+    duration: String
+    progress: Int
+    status: String
+    top: Int
+    isNew: Boolean
+    itemType: String
+    gifImage: String
+    recent: Boolean
+}
+
+type local_dlservices_program {
+    id: core_id!
+    fullname(format: core_format = PLAIN): String!
+    shortname(format: core_format = PLAIN): String!
+    summary(format: core_format = MOBILE): String!
+    category: String!
+    link: String!
+    imageUrl: String!
+    duration: String
+    progress: Int
+    status: String
+    isNew: Boolean
+    itemType: String
+}
+
+type local_dlservices_items_result {
+    items: [local_dlservices_item!]!
+}
+
+type local_dlservices_programs_result {
+    programs: [local_dlservices_program!]!
+}
+
+extend type Query {
+    local_dlservices_items(searchTerm: String, spage: Int): local_dlservices_items_result!
+    local_dlservices_mycurrent_coursesitems(spage: Int, notprogress: Boolean): local_dlservices_items_result!
+    local_dlservices_mycoursesitems(searchTerm: String, spage: Int, limit: Int, programscourses: Boolean): local_dlservices_items_result!
+    local_dlservices_moreviewsitems(limit: Int, recommended: Boolean): local_dlservices_items_result!
+    local_dlservices_myprograms(searchTerm: String, spage: Int, limit: Int, completedprograms: Boolean): local_dlservices_programs_result!
+    local_dlservices_noprogress_items(spage: Int): local_dlservices_items_result!
+    local_dlservices_completed_items(spage: Int): local_dlservices_items_result!
+}

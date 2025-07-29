@@ -1,0 +1,18 @@
+body.dl-dark-mode table.flexible thead th a, body.dl-dark-mode table.flexible thead th {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--dl-principal2);
+}
+
+body.dl-dark-mode table.flexible tbody tr, body.dl-dark-mode table.flexible tbody tr a {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--dl-principal2);
+    background: transparent;
+}
+
+#page-totara-plan-index input[type=submit] {
+    text-overflow: ellipsis;
+}

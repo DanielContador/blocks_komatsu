@@ -1,0 +1,174 @@
+body.dl-dark-mode .tw-profileCard {
+    padding-top: var(--gap-4);
+}
+
+body.dl-dark-mode .tw-profileCard__avatar__img{
+    border-radius: 0;
+    border: none;
+}
+
+body.dl-dark-mode  div.tw-profileCard a.tw-profileCard__avatar{
+    margin-right: 30px;
+}
+
+div.tw-profileCard a img.tw-profileCard__avatar__img, .mform .felement.fstatic img, .form-item .form-description img{
+    width: 122px;
+    height: 122px;
+    border-radius: 3px;
+}
+
+div.tw-profileCard a img.tw-profileCard__avatar__img{
+    border-radius: 8px;
+}
+
+.tw-profileCard__description h2.tw-profileCard__description__header{
+    font-family: 'Roboto-Bold', sans-serif;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+
+.tw-profileCard__description p.tw-profileCard__description__text{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 37.04px;
+    letter-spacing: 0;
+    color: var(--dl-graygraph);
+}
+
+.fdate_selector span.legend{
+    color: var(--dl-principal2) !important;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+section.node_category.block_totara_user_profile_category_contact h3, legend a{
+    color: var(--dl-secundario) !important;
+    opacity: 0.8;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+section.node_category.block_totara_user_profile_category_contact li dl dt{
+    color: var(--dl-graygraph);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+section.node_category.block_totara_user_profile_category_contact li dl dd,
+section.node_category.block_totara_user_profile_category_contact li dl dd a{
+    color: var(--dl-principal2);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+li.editprofile a{
+    height: 32px;
+    width: 99px;
+    text-align: center;
+    align-content: center;
+    display: block;
+    border-radius: 4px;
+    background: var(--dl-principal2);
+    float: right;
+    margin-top: -70px;
+}
+
+li.editprofile a:hover{
+    opacity: 0.8;
+}
+
+/*Form*/
+.mform input[type=text], .mform input[type=password], .mform input[type=number], .input-ordinary, .editor_atto_content{
+    background: var(--dl-background);
+    border-radius: 11px;
+    border: 1px solid var(--dl-graygraph);
+    padding: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    color: var(--dl-principal2);
+}
+
+body.dl-dark-mode form input[type="text"]:focus{
+    background-color: var(--dl-background);
+    border-color: var(--dl-graygraph);
+    color: var(--dl-principal2);
+}
+
+.custom-select:not([multiple],[size]), .mform select:not([multiple],[size]), .adminform-select select:not([multiple],[size]){
+    background: var(--dl-graygraph);
+    border-radius: 11px;
+    border: 1px solid var(--dl-graygraph);
+    padding-left: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    color: var(--dl-principal2);
+}
+
+.custom-select:not([multiple],[size]):focus, .mform select:not([multiple],[size]):focus, .adminform-select select:not([multiple],[size]):focus,
+div.editor_atto_toolbar, .filemanager .fp-navbar, .fp-pathbar, .filemanager-container{
+    background: var(--dl-background);
+    border-radius: 11px;
+    border: 1px solid var(--dl-graygraph);
+    padding-left: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    color: var(--dl-principal2);
+}
+
+input.form-submit, input#id_submitbutton, input#id_submitbutton2, .path-admin .buttons input[type=submit], td.submit input{
+    height: 32px;
+    text-align: center;
+    align-content: center;
+    display: block;
+    border-radius: 4px;
+    background: var(--dl-principal2);
+    float: right;
+    color: var(--dl-background);
+}
+
+body#page-user-editadvanced .mform .fitem .fitemtitle label {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+}
+
+a.collapseexpand,.filemanager a, .file-picker a, .filemanager a:hover,
+.file-picker a:hover, span.iconhelp{
+    color: gray !important;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.filemanager a span, .filemanager a span:before{
+    color: gray !important;
+}
+
+body.dl-dark-mode .file-picker .fp-repo-items label{
+    color: var(--dl-background) !important;
+}
+
+body.dl-dark-mode ul.nav.nav-tabs li a:hover{
+    color: var(--dl-background);
+    border-radius: 4px 4px 0 0;
+}
+
+@media (min-width: 992){
+    section.node_category.block_totara_user_profile_category_contact{
+        padding-left: 135px
+    }
+    .tw-profileCard__description h2.tw-profileCard__description__header{
+        font-size: 33.61px;
+        line-height: 48.02px;
+    }
+}

@@ -1,0 +1,487 @@
+body:not(.editing).block_dlfrontuserinfo{
+    box-shadow: 0px 3px 6px #00000029 !important;
+    border: none !important;
+    padding: 20px !important;
+}
+/* .block_dlfrontuserinfo{
+    list-style: none;
+    margin-top: 0;
+} */
+/*
+.block_dlfrontuserinfo ._dl_content_block_info{
+    list-style: none;
+    margin-bottom: 10%;
+    margin-top: 20%;
+}
+
+.block_dlfrontuserinfo div.img-profile{
+    display: flex;
+}
+.block_dlfrontuserinfo div.img-profile > span{
+    min-width: 73px;
+    width: 73px;
+    height: 73px;
+}
+.block_dlfrontuserinfo div.img-profile span img{
+    width: 122px;
+    height: 122px;
+    border-radius: 3px;
+}
+.block_dlfrontuserinfo div.img-profile ul{
+    list-style: none;
+    margin-left: 14px;
+    margin-bottom: 0px;
+    overflow:hidden;
+}
+.block_dlfrontuserinfo div.img-profile ul li{
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+.block_dlfrontuserinfo div.img-profile ul li.edit{
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.block_dlfrontuserinfo div.content-badges img{
+    width: 32px;
+    margin-right: 20px;
+}
+
+.block_dlfrontuserinfo div.content-badges h2
+{
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    margin-bottom: 18px !important;
+}
+
+.block_dlfrontuserinfo div.content-courses h2,
+.block_dlfrontuserinfo div.content-programs h2,
+.block_dlfrontuserinfo div.content-competences h2{
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 14px;
+    letter-spacing: 0.36px;
+    margin-top: 0;
+    text-align: start;
+} */
+
+/* .block_dlfrontuserinfo span.results{
+    font-family: 'Roboto-SemiBold', sans-serif;
+    font-size: 18px;
+    line-height: 14px;
+    letter-spacing: 0.36px;
+    opacity: 0.5;
+}
+
+div.row.d-flex{
+    margin-bottom: 0;
+    align-items: flex-end;
+}
+
+.block_dlfrontuserinfo span.name{
+    font-size: 14px !important;
+}
+
+.block_dlfrontuserinfo div.content-badges span.badges{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.block_dlfrontuserinfo span.more{
+    display: block;
+    color: #000000;
+}
+.block_dlfrontuserinfo ul{
+    list-style: none;
+}
+.block_dlfrontuserinfo div.content-courses ul{
+    display: flex;
+    justify-content: center;
+    margin: 0px !important;
+}
+.block_dlfrontuserinfo div.content-courses ul li{
+    padding-right: 45px
+}
+.block_dlfrontuserinfo div.content-courses ul li:last-child{
+    padding-right: 0px !important;
+}
+.block_dlfrontuserinfo div.content-courses ul li span{
+    display: block;
+    text-align: center;
+}
+
+.block_dlfrontuserinfo .header.block-header{
+    display: none;
+}
+body.editing .block_dlfrontuserinfo .header.block-header{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+#region-main div#block-region-main .block_dlfrontuserinfo span.name {
+    font-size: 13px !important;
+}
+
+.block_dlfrontuserinfo .row.counting-data {
+    margin-top: 55px;
+}
+.block_dlfrontuserinfo .content-courses, .block_dlfrontuserinfo .content-programs{
+    border-right: 1px solid #8C8B9C;
+}
+
+.block_dlfrontuserinfo div.dl-icons span.flex-icon.ft-fw.ft {
+    font-size: 18px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    margin: auto;
+    display: grid;
+    border: 1px solid var(--dl-principal);
+    background: var(--dl-principal);
+    box-shadow: 0 3px 8px rgb(83 82 148), 0 8px 4px rgb(12 10 154);
+} */
+
+/* body.dl-dark-mode .block_dlfrontuserinfo h3.bold {
+    line-height: 20px;
+    font-size: 20px;
+    text-align: start;
+    margin-top: 10px;
+}
+
+body.dl-dark-mode .block_dlfrontuserinfo span.roles {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 37px;
+    color: #D1D4D3;
+    height: 48px;
+} */
+
+/*@media (min-width: 992px){*/
+/*    #region-main div#block-region-main .block_dlfrontuserinfo div.content-badges,*/
+/*    #region-main div#block-region-main .block_dlfrontuserinfo div.content-courses{*/
+/*        width: 41.6666666667%;*/
+/*    }*/
+/*}*/
+/* @media (max-width: 1366px){
+    #region-main .block_dlfrontuserinfo div.img-profile ul li.nameuser {
+        font-size: 17px;
+    }
+    #region-main .block_dlfrontuserinfo div.img-profile ul {
+        margin-left: 12px;
+    }
+    #region-main .block_dlfrontuserinfo .content-badges{
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+    }
+
+    #region-main .block_dlfrontuserinfo div.content-badges span.badges {
+        margin-bottom: 12px;
+    }
+    #region-main div#block-region-main .block_dlfrontuserinfo div.content-courses ul li {
+        padding-right: 15px !important;
+    }
+    #region-main div#block-region-main .block_dlfrontuserinfo span.results {
+        font-size: 36px !important;
+    }
+    #region-main div#block-region-main .block_dlfrontuserinfo span.name {
+        font-size: 11px !important;
+    }
+    #region-main .block_dlfrontuserinfo div.img-profile ul li {
+        font-size: 15px !important;
+    }
+    #region-main .block_dlfrontuserinfo div.img-profile ul li.edit {
+        margin-bottom: 4px;
+        font-size: 12px;
+    }
+    #block-region-side-pre .block_dlfrontuserinfo div.content-courses ul li,
+    #block-region-side-post .block_dlfrontuserinfo div.content-courses ul li{
+        padding-right: 15px !important;
+    }
+    #block-region-side-pre .block_dlfrontuserinfo div.img-profile ul li,
+    #block-region-side-post .block_dlfrontuserinfo div.img-profile ul li {
+        font-size: 14px;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile  ul{
+        text-align: center;
+        margin-left: 0px;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul li.email,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile  ul li.email{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 70%;
+        display: inline-block;
+    }
+}
+@media (max-width: 1280px){
+    #region-main div#block-region-main .block_dlfrontuserinfo div.content-courses ul li {
+        padding-right: 10px !important;
+    }
+    #region-main div#block-region-main .block_dlfrontuserinfo span.name {
+        font-size: 10px !important;
+    }
+}
+@media (max-width: 1220px){
+    #block-region-side-pre .block_dlfrontuserinfo span.name, #block-region-side-post .block_dlfrontuserinfo span.name {
+        font-size: 11px !important;
+    }
+    #block-region-side-pre .block_dlfrontuserinfo span.results, #block-region-side-post .block_dlfrontuserinfo span.results {
+        font-size: 25px;
+    }
+    #block-region-main div.block_dlfrontuserinfo div._dl_content_block_info {
+        display: block !important;
+    }
+    #block-region-main .block_dlfrontuserinfo div.img-profile,
+    #block-region-main .block_dlfrontuserinfo div.content-badges,
+    #block-region-main .block_dlfrontuserinfo div.content-courses{
+        width: 100% !important;
+        justify-content: center;
+    }
+    #block-region-main .block_dlfrontuserinfo div.block-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #block-region-main div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile,
+    #block-region-main div.block_dlfrontuserinfo div.content-badges{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 1027px){
+    #block-region-side-pre .block_dlfrontuserinfo div.content-courses ul li,
+    #block-region-side-post .block_dlfrontuserinfo div.content-courses ul li{
+        padding-right: 8px !important;
+    }
+    #block-region-side-pre .block_dlfrontuserinfo span.results,
+    #block-region-side-post .block_dlfrontuserinfo span.results{
+        font-size: 25px;
+    }
+    #block-region-side-pre .block_dlfrontuserinfo span.name,
+    #block-region-side-post .block_dlfrontuserinfo span.name {
+        font-size: 11px !important;
+    }
+    div#block-region-main .block_dlfrontuserinfo span.badges img:nth-child(n+3){
+        display: none;
+    }
+}
+@media (max-width: 975px){
+    .block_dlfrontuserinfo div.content-badges{
+        margin-bottom: 18px;
+    }
+}
+@media (max-width: 992px){
+    #region-main .block_dlfrontuserinfo div.img-profile ul li {
+        overflow: inherit !important;
+        width: 100% !important;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul li.email,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile  ul li.email{
+        overflow: inherit !important;
+        width: 100% !important;
+    }
+    #block-region-side-pre .block_dlfrontuserinfo span.name, #block-region-side-post .block_dlfrontuserinfo span.name {
+        font-size: 14px !important;
+    }
+    #block-region-side-pre .block_dlfrontuserinfo span.results, #block-region-side-post .block_dlfrontuserinfo span.results {
+        font-size: 40px;
+    }
+    #block-region-main div.block_dlfrontuserinfo div._dl_content_block_info {
+        display: flex !important;
+        flex-direction: column;
+    }
+    .block_dlfrontuserinfo div.img-profile {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width: 800px){
+    div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    div.block_dlfrontuserinfo div.content-badges{
+        margin-bottom: 30px;
+    }
+    .block_dlfrontuserinfo div.block-content{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media (max-width: 768px){
+    #region-main div#block-region-main div.block_dlfrontuserinfo div._dl_content_block_info{
+        display: block !important;
+    }
+    #region-main div#block-region-main .block_dlfrontuserinfo div.content-badges,
+    #region-main div#block-region-main .block_dlfrontuserinfo div.content-courses{
+        width: 100% !important;
+    }
+    div#block-region-main .block_dlfrontuserinfo span.badges img:nth-child(n+3) {
+        display: block !important;
+    }
+    .block_dlfrontuserinfo div.block-content{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    div.block_dlfrontuserinfo div.content-badges{
+        margin-bottom: 30px;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile {
+        flex-direction: row;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile  ul{
+        text-align: unset;
+        margin-left: 14px;
+    }
+    #block-region-top .block_dlfrontuserinfo div.content-courses ul li {
+        padding-right: 17px;
+    }
+}
+@media (max-width: 500px){
+    .block_dlfrontuserinfo div.content-courses ul li {
+        padding-right: 35px;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul {
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 450px){
+    #block-region-main div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile{
+        flex-direction: column;
+        align-items: center;
+    }
+    #block-region-main div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul{
+        text-align: center;
+        margin-left: 0px;
+        width: 100%;
+    }
+} */
+
+/* @media (max-width: 370px){
+    #block-region-side-pre .block_dlfrontuserinfo span.name,
+    #block-region-side-post .block_dlfrontuserinfo span.name,
+    #block-region-main .block_dlfrontuserinfo span.name ,
+    #block-region-top .block_dlfrontuserinfo span.name{
+        font-size: 11px !important;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul li.email,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul li.email ,
+    #block-region-top div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul li.email{
+        overflow: hidden !important;
+        white-space: nowrap !important;
+        text-overflow: ellipsis;
+        width: 70% !important;
+        display: inline-block;
+    }
+
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile,
+    #block-region-top div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile{
+        flex-direction: column;
+        align-items: center;
+    }
+    #block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul,
+    #block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul,
+    #block-region-top div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile ul{
+        text-align: center;
+        margin-left: 0px;
+    }
+    #block-region-top .block_dlfrontuserinfo span.badges img:nth-child(n+3){
+        display: none;
+    }
+}
+#block-region-side-pre div.img-profile,
+#block-region-side-pre div.content-badges,
+#block-region-side-pre div.content-courses,
+#block-region-side-post div.img-profile,
+#block-region-side-post div.content-badges,
+#block-region-side-post div.content-courses{
+    width: 100% !important;
+}
+#block-region-side-pre div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile,
+#block-region-side-post div.block_dlfrontuserinfo div._dl_content_block_info div.img-profile{
+    margin-bottom: 30px;
+    justify-content: center;
+}
+#block-region-side-pre div.block_dlfrontuserinfo div.content-badges,
+#block-region-side-post div.block_dlfrontuserinfo div.content-badges{
+    margin-bottom: 30px;
+}
+#block-region-side-pre .block_dlfrontuserinfo div.block-content,
+#block-region-side-post .block_dlfrontuserinfo div.block-content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#region-main div#block-region-main div.block_dlfrontuserinfo div._dl_content_block_info{
+    display: flex;
+    justify-content: center;
+}
+#region-main div#block-region-main .block_dlfrontuserinfo div.content-badges img {
+    margin-right: 16px;
+}
+
+#region-main div#block-region-main .block_dlfrontuserinfo div.content-courses ul li {
+    padding-right: 17px;
+}
+#region-main div#block-region-main .block_dlfrontuserinfo span.results {
+    font-size: 38px;
+}
+
+div#block-region-main .block_dlfrontuserinfo span.badges img:nth-child(n+3){
+    display: none;
+}
+#region-main .block_dlfrontuserinfo div.content-badges span.badges span{
+    text-align: center;
+}
+.block_dlfrontuserinfo div.content-courses ul li:last-child,
+#block-region-side-pre .block_dlfrontuserinfo div.content-courses ul li:last-child,
+#block-region-side-post .block_dlfrontuserinfo div.content-courses ul li:last-child{
+    padding-right: 0px !important;
+}
+
+#block-region-side-pre .block_dlfrontuserinfo div.content-badges img:last-child,
+#block-region-side-post .block_dlfrontuserinfo div.content-badges img:last-child{
+    margin-right: 0px !important;
+}
+#block-region-side-pre .block_dlfrontuserinfo div.content-courses ul li,
+#block-region-side-post .block_dlfrontuserinfo div.content-courses ul li{
+    padding-right: 20px;
+} */
+
+/* body.dl-dark-mode .block_dlfrontuserinfo div.block_dlwelcome{
+    background: url('https://totara-18-actualizacion.academia365.cl/pluginfile.php/1611/course/images/1737311660/image'), linear-gradient(to bottom, #06032F 0%, #06032F 100%) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: absolute;
+    width: 113%;
+    height: 728px;
+    margin-top: -6%;
+    margin-left: -107px;
+} */
+
+/* body.dl-dark-mode .block_dlfrontuserinfo div.block_dlwelcome .d-flex.d-flex-wrap{
+    height: 100%;
+} */

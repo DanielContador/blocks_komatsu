@@ -1,0 +1,111 @@
+{{!
+  Template: selfenrol_view.mustache
+  Descripción: Muestra un banner de curso con una sola imagen de fondo, 
+               incluyendo título, duración, resumen y barra de progreso.
+}}
+
+<div class="dl-selfenrol-course-banner">
+  <div class="image-course-holder">
+    <img src="{{bannerimage}}" alt="Course Banner" class="image-course">
+  </div>
+
+  {{! Opcional: capa semitransparente para oscurecer o aclarar la imagen }}
+  <div class="dl-course-overlay dl-gradient-overlay"></div>
+
+  <div class="dl-course-content">
+    {{! INFORMACIÓN DEL CURSO }}
+    <div class="row align-items-center col-12 col-md-8">
+      <h1 class="dl-course-title">{{coursefullname}}</h1>
+
+      {{! Duración del curso }}
+      {{#courseduration}}
+        <p class="dl-course-duration">
+          <i class="fa fa-clock-o" aria-hidden="true"></i> {{courseduration}}
+        </p>
+      {{/courseduration}}
+
+    </div> <!-- row -->
+    {{! FORMULARIOS DE INSCRIPCIÓN }}
+    <div class="dl-enrolment-forms-container">
+      {{#forms}}
+        <div class="enrolment-form">
+          <h3>{{enroltype}} {{{editForm}}}</h3>
+          {{{form}}}
+        </div>
+      {{/forms}}
+    </div>
+  </div> <!-- dl-course-content -->
+</div> <!-- dl-course-banner -->
+
+<!-- =========================================
+     CONTENIDO DEBAJO DEL BANNER (ACORDEÓN)
+     ========================================= -->
+<div class="container mt-4 mb-5">
+
+  {{#coursesummary}}
+    <h3 class="dl-section-title">{{#str}}description{{/str}}</h3>
+    <p class="dl-section-description">
+      {{{coursesummary}}}
+    </p>
+  {{/coursesummary}}
+
+  {{#whatlearn}}
+    <h3 class="dl-section-title">{{#str}}whatlearn,local_dl_selfenrol_info{{/str}}</h3>
+    <p class="dl-section-description">
+      {{whatlearn}}
+    </p>
+  {{/whatlearn}}
+
+  <h3 class="dl-section-title" id="dl-section-title-content">{{#str}}content{{/str}}</h3>
+
+  <!-- Acordeón -->
+  <div class="dl-accordion">
+    {{#content}}
+      <!-- Ítem -->
+      <div class="dl-accordion-item">
+        <div class="dl-accordion-header" data-accordion-toggle>
+          <span class="dl-accordion-title dl-section-description">{{content_title}}</span>
+          <span class="dl-accordion-icon fa-plus"></span>
+        </div>
+        <div class="dl-accordion-body">
+          <p class="dl-section-description">{{content_text}}</p>
+        </div>
+      </div>
+    {{/content}}
+
+  </div> <!-- Fin acordeón -->
+
+</div> <!-- Fin container -->
+
+<!-- =========================================
+     JS PARA MOSTRAR/OCULTAR SECCIONES
+     ========================================= -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona todos los encabezados del acordeón
+    const toggles = document.querySelectorAll('[data-accordion-toggle]');
+
+    if (!toggles) {
+      document.getElementById('dl-section-title-content').style.display = 'none'
+    } else {
+      toggles.forEach((toggle) => {
+        toggle.addEventListener('click', function () {
+          const body = toggle.nextElementSibling;       // El contenedor .dl-accordion-body
+          const icon = toggle.querySelector('.dl-accordion-icon'); // El span con + / -
+
+          // Si está visible, lo ocultamos
+          if (body.style.display === 'block') {
+            body.style.display = 'none';
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+          } else {
+            // Si está oculto, lo mostramos
+            body.style.display = 'block';
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+          }
+        });
+      });
+    }
+  });
+</script>

@@ -1,0 +1,177 @@
+body.dl-dark-mode form, body.dl-dark-mode legend span.legend {
+    background: transparent;
+    border: none;
+    color: var(--dl-principal2);
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 11px;
+}
+
+body.dl-dark-mode form label, body.dl-dark-mode legend span.legend{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+body.dl-dark-mode input[type=text], body.dl-dark-mode input[type=password], body.dl-dark-mode input[type=number], .input-ordinary, .editor_atto_content, body.dl-dark-mode div.comment-area textarea, body.dl-dark-mode .comment-content{
+    background: var(--dl-background);
+    border-radius: 11px;
+    border: 1px solid var(--dl-graygraph);
+    padding: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    color: var(--dl-principal2);
+}
+
+body.dl-dark-mode div.comment-area textarea{
+    color: var(--dl-principal2) !important;
+}
+
+.custom-select:not([multiple],[size]), body.dl-dark-mode select:not([multiple],[size]),
+.adminform-select select:not([multiple],[size]),
+select[disabled] > option {
+    background: var(--dl-graygraph);
+    border-radius: 11px;
+    border: 1px solid var(--dl-graygraph);
+    padding-left: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    color: var(--dl-principal2);
+}
+
+.custom-select:not([multiple],[size]):focus, body.dl-dark-mode select:not([multiple],[size]):focus, .adminform-select select:not([multiple],[size]):focus,
+div.editor_atto_toolbar, .filemanager .fp-navbar, .fp-pathbar, .filemanager-container,
+body.dl-dark-mode input[type=text]:focus, body.dl-dark-mode input[type=password]:focus, body.dl-dark-mode input[type=number]:focus,
+.input-ordinary:focus, .editor_atto_content:focus{
+    background: var(--dl-background);
+    border-radius: 11px;
+    border: 1px solid var(--dl-graygraph);
+    padding-left: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    color: var(--dl-principal2);
+}
+
+body.dl-dark-mode .form-autocomplete-downarrow{
+    color: var(--dl-principal2);
+    position: relative;
+    left: -1.5em;
+    cursor: pointer;
+    background: transparent url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='2' viewBox='0 0 4 2'%3e%3cpath fill='%23000' d='M2 2L0 0h4z'/%3e%3c/svg%3e) right 1.4rem center / 0.8rem 1rem no-repeat;
+}
+
+body.dl-dark-mode form input[role="combobox"]{
+    background: var(--dl-graygraph);
+    border-radius: 11px;
+    border: 1px solid var(--dl-graygraph);
+}
+
+body.dl-dark-mode form input[role="combobox"]::placeholder{
+    color: var(--dl-principal2);
+}
+
+body.dl-dark-mode form .form-autocomplete-suggestions li{
+    background: var(--dl-background);
+    color: var(--dl-principal2);
+    border: 1px solid var(--dl-graygraph);
+}
+
+body.dl-dark-mode form .form-autocomplete-suggestions li:hover,
+body.dl-dark-mode form .form-autocomplete-suggestions li[aria-selected=true]{
+    background: var(--dl-graygraph);
+    color: var(--dl-background);
+}
+
+body.dl-dark-mode .btn-primary,body.dl-dark-mode .btn-primary:hover{
+    background-color: var(--dl-principal2);
+    color: var(--dl-background);
+    border-radius: 4px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+body.dl-dark-mode div#block-region-side-post ul li a, body.dl-dark-mode div.comment-area .fd a, body.dl-dark-mode .comment-content a{
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--dl-graygraph);
+}
+
+body.dl-dark-mode .file-picker .fp-repo-items label{
+    color: var(--dl-graygraph);
+}
+
+body.dl-dark-mode .file-picker .fp-repo-items input[type="file"], body.dl-dark-mode .file-picker .fp-repo-items input[type="text"],
+body.dl-dark-mode .file-picker .fp-repo-items input[type="password"], body.dl-dark-mode .file-picker .fp-repo-items input[type="number"],
+body.dl-dark-mode .file-picker .fp-repo-items span[data-flex-icon="loading"], body.dl-dark-mode .file-picker .fp-repo-items p{
+    color: var(--dl-graygraph);
+}
+
+.custom-select:not([multiple],[size]):disabled, .mform select:not([multiple],[size]):disabled,
+.adminform-select select:not([multiple],[size]):disabled,
+.mform input[type=text][disabled], .mform input[type=password][disabled], .mform input[type=number][disabled],
+.input-ordinary[disabled], select.singleselect[disabled]{
+    background: var(--dl-graygraph);
+}
+
+body.dl-dark-mode div#block-region-side-post #dp-plans-menu ul li a,
+body.dl-dark-mode div#block-region-side-post #dp-plans-menu ul li a.dp-menu-selected {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*body.dl-dark-mode div#block-region-side-post #dp-plans-menu ul li {
+    list-style-type: none;
+}*/
+
+body.dl-dark-mode a span.flex-icon{
+    color: var(--dl-graygraph);
+}
+
+body.dl-dark-mode.dl-dark-mode form.approvalform {
+    color: var(--dl-graygraph);
+}
+
+body.dl-dark-mode.dl-dark-mode form.approvalform input[type="submit"] {
+    margin-left: 20px;
+}
+
+body.dl-dark-mode a span.ft-state-danger{
+    border-radius: 50px;
+    border: 1px solid #cc2428;
+    height: 20px;
+    width: 20px;
+    background: #cc2428;
+}
+
+body.dl-dark-mode a span.ft-state-danger::before{
+    color: var(--dl-background);
+}
+
+body.dl-dark-mode .tw-evidence__content_container{
+    background: transparent;
+}
+
+body.dl-dark-mode .filepicker .moodle-dialogue-hd h3,
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-repo-area a span,
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-navbar .fp-toolbar a,
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-navbar .fp-viewbar a span.flex-icon,
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-repo-items .fp-content select:not([multiple],[size]),
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-repo-items .fp-content input[type="file"],
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-repo-items .fp-content input[type="text"],
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-repo-items .fp-content input[type="number"]{
+    color: var(--dl-background);
+}
+
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-repo-items .fp-content select:not([multiple],[size]),
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-repo-items .fp-content input[type="file"],
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-repo-items .fp-content input[type="text"],
+body.dl-dark-mode .filepicker .moodle-dialogue-bd .file-picker .fp-repo-items .fp-content input[type="number"]
+{
+    border: 1px solid var(--dl-background);
+    background: var(--dl-principal2);
+}

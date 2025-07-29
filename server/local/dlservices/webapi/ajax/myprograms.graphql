@@ -1,0 +1,18 @@
+query local_dlservices_myprograms($searchTerm: String, $spage: Int, $limit: Int, $completedprograms: Boolean){
+    local_dlservices_myprograms(searchTerm: $searchTerm, spage: $spage, limit: $limit, completedprograms: $completedprograms){
+        programs{
+            id
+            fullname
+            shortname
+            summary
+            category
+            link
+            imageUrl
+            duration
+            progress
+            status
+            isNew
+            itemType
+        }
+    }
+}

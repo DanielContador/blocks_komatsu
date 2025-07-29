@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb8bf037-5bfc-4965-a51f-4da7f2054f96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../dl/build/dependencies.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/build/tui_bundle.development.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/build/tui_bundle.development.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/build/tui_bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/build/tui_bundle.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/fonts/open-sans/OpenSans-SemiboldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/images/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/images/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/images/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/images/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/assets/images/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/banner/LearningItemsBanner.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/button/CourseButton.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/chart/PieChart.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/grid/CourseCard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/grid/CourseCatalogGrid.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/grid/GridItem1.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/grid/GridMoreViewItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/grid/GridRow.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/list/LearningCard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/list/LearningList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/slider/CourseSlider.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/components/slider/SliderGridRow.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/pages/CourseCatalog.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/pages/CoursesSlider.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/pages/CoursesView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/pages/DlCustomHeader.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/pages/MyLearningblock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/pages/ProgramsView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/pages/ReportGraphblock.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/styles/global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dl/src/tui.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="30KFPiC2f9p65TJfWo85yL17pIh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Daniel Contador/Documents/GitHub/TOT_theme_dlcourseflix",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.19416.23" />
+        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.19416.23" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb8bf037-5bfc-4965-a51f-4da7f2054f96" name="Changes" comment="" />
+      <created>1753368334834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753368334834</updated>
+      <workItem from="1753368336018" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

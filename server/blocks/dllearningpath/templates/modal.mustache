@@ -1,0 +1,53 @@
+<div class="modal" id="stage{{number}}" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered stage-modal" role="document">
+        <div class="modal-content stage-modal">
+            <div class="modal-header">
+                <h5 class="modal-title">Cursos</h5>
+            </div>
+            <div class="modal-body">
+                {{# modalCourses}}
+                    {{#current}}
+                        <a href="{{href}}">
+                            <div class="item_course_current">
+                                <div
+                                        class="current_course">{{name}}
+                                </div>
+                                <img class="chevron-right"
+                                     src="/blocks/dllearningpath/assets/chevron-right.svg"/>
+                            </div>
+                        </a>
+                    {{/current}}
+                    {{^current}}
+                        <a href="{{href}}">
+                            <div class="item_course">
+                                <div
+                                        class="{{#isCompleted}}course_complete{{/isCompleted}}{{^isCompleted}}course_name{{/isCompleted}}">{{name}}
+                                </div>
+                                {{#isCompleted}}
+                                    <img class="chevron-right"
+                                         src="/blocks/dllearningpath/assets/chevron-right-3.svg"/>
+                                {{/isCompleted}}
+                                {{^isCompleted}}
+                                    <img class="chevron-right"
+                                         src="/blocks/dllearningpath/assets/chevron-right-5.svg"/>
+                                {{/isCompleted}}
+                            </div>
+                        </a>
+                    {{/current}}
+                    <img class="line" src="/blocks/dllearningpath/assets/line-27.svg"/>
+                {{/modalCourses}}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .modal-backdrop {
+        display: none;
+    }
+</style>

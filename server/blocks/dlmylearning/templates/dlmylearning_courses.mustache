@@ -1,0 +1,66 @@
+<div id="dlmylearning_wrapper_courses">
+{{! Courses block header }}
+<div id="dlmylearning-course-header" class="d-flex mb-20">
+    <div id="dlmylearning-course-title" class="p-10 mr-15">
+        <h3 class="fw-600">{{#str}}recentcourses, block_dlmylearning{{/str}}</h3>
+    </div>
+    <div id="dlmy-gotocourses-top" class="dlbtn-a1 d-xs-none">
+        <a href="{{courses_url}}">{{#str}}gotocourses, block_dlmylearning{{/str}}</a>
+    </div>
+</div>
+{{#has_courses}}
+    {{! Course List}}
+    <div id="dlmylearning-course-list">
+        {{#mycourses}}
+        <div class="dlcourse-item d-flex p-15 mb-20">
+            <div class="dlcourse-item-content d-flex">
+                <div class="dl-course-img mr-15" style="background-image: url({{image}});"></div>
+                <div class="dlcard-content">
+                    <div class="dlcourse-text">
+                        <div class="dlcourse-text-header d-flex">
+                            <h3 class="dlcoursename pb-5 pr-10">{{fullname}}</h3>
+                            <div class="dlcourse-state">
+                                {{# completed}}
+                                    {{{completed_icon}}}
+                                    {{#str}}statecomplete, block_dlmylearning{{/str}}
+                                {{/completed}}
+                                {{# inprogress}}
+                                    {{{inprogress_icon}}}
+                                    {{#str}}stateinprogress, block_dlmylearning{{/str}}
+                                {{/inprogress}}
+                                {{# notstarted}}
+                                    {{{notstarted_icon}}}
+                                    {{#str}}statenotstarted, block_dlmylearning{{/str}}
+                                {{/notstarted}}
+                            </div> 
+                        </div>
+                        
+                        <p class="dldescription">{{description}}</p>
+                    </div>
+                    <div class="dlcourse-percent">
+                        <div class="progress">
+                            <div  class="progress-bar" role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%"></div>
+                        </div>
+                        <div>
+                            <span class="dltext-progress pl-5">{{progress}}%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dl-show-course">
+                <a href="{{url}}">
+                    <i class="fas fa-play-circle"></i>
+                </a>                
+            </div>
+        </div>    
+        {{/mycourses}}
+    </div>
+
+    {{! Course Footer}}
+    <div id="dlcourse-footer" class="dlgrid-bnt-footer">
+        <div id="dlmylearning-gotocourses-bottom" class="dlbtn-a1 d-xs-block d-none">
+            <a href="{{courses_url}}">{{#str}}gotocourses, block_dlmylearning{{/str}}</a>
+        </div>
+    </div>
+{{/has_courses}}
+</div>

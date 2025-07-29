@@ -1,0 +1,421 @@
+#page-mod-feedback-complete #page {
+    display: none;
+}
+
+.dl-courseflix-feedback-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0px 58px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.courseflix-feedback-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+}
+
+.courseflix-feedback-title-container input {
+    display: none;
+}
+
+.courseflix-feedback-title-container label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF80;
+    margin-right: 10px;
+    color: #FFFFFFB2;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.courseflix-feedback-title {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.courseflix-feedback-title h1 {
+    color: var(--Text-Light-Primary, #FFF);
+    font-family: Roboto;
+    font-size: var(--font-size-heading-level-2) !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58.337px; /* 162.048% */
+}
+
+.courseflix-feedback-title p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: #FFF;
+    text-overflow: ellipsis;
+    font-family: Roboto;
+    font-size: 15.259px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.888px; /* 150% */
+    margin: 0 !important;
+}
+
+.courseflix-feedback-desc {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+}
+
+.courseflix-feedback-desc p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    align-self: stretch;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.50);
+    text-overflow: ellipsis;
+    font-family: Roboto-Bold;
+    font-size: 15.259px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.888px; /* 150% */
+}
+
+.courseflix-start-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.courseflix-start-feedback a {
+    text-decoration: none;
+}
+
+.feedback-start {
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--White, #FFF);
+    color: var(--Azul-PINCIPAL, #140A9A);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    list-style: none;
+    cursor: pointer;
+    height: 35px;
+}
+
+.feedback-start:hover {
+    opacity: 0.7;
+}
+
+/*Complete feedback*/
+.feedback-sended-answers {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    gap: 5px;
+    border-radius: 40px;
+    background: rgba(117, 224, 100, 0.50);
+}
+
+#completed-radio-disabled-label {
+    background-image: linear-gradient(#2BB673, #99CCFF);
+    color: var(--Azul-1, #0C065C);
+}
+
+#user-notifications {
+    position: initial !important;
+}
+
+.dl_feedback_name {
+    margin-top: 10px;
+}
+
+.dl_feedback_name > h2 {
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+#feedback_complete_form #fitem_id_anonymousmode .fitemtitle {
+    display: none;
+}
+
+#feedback_complete_form .fitem > fieldset > legend {
+    width: 80% !important;
+}
+
+#feedback_complete_form div.feedback_itemlist {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+#feedback_edit_form div.feedback_itemlist .itemname {
+    color: #FFF;
+}
+
+/*Mod feedback*/
+#fitem_id_label_1 .felement {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    align-self: stretch;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.50);
+    text-overflow: ellipsis;
+    font-family: Roboto;
+    font-size: 15.259px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.888px;
+}
+
+#feedback_complete_form .feedback-item-label {
+    display: flex;
+    padding: 8px 36px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 44px;
+    background: var(--RUTA, #3A376F);
+    border: 0 !important;
+}
+
+#feedback_complete_form div.fitem:nth-child(3) {
+    background: transparent;
+}
+
+#feedback_complete_form .feedback-item-label .no-overflow {
+    align-self: stretch;
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+#feedback_complete_form .feedback-item-multichoice, #feedback_complete_form .feedback-item-multichoicerated {
+    display: flex;
+    padding: 0px 36px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border: 0 !important;
+    background: var(--dl-background);
+}
+
+#feedback_complete_form .feedback-item-multichoice.multichoice-vertical .felement {
+    display: flex;
+    align-items: flex-start;
+    gap: 1px;
+    flex-direction: column;
+}
+
+#feedback_complete_form .feedback-item-multichoice.multichoice-vertical .felement span {
+    display: flex;
+    width: unset;
+    height: 30px;
+    padding: 1px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+}
+
+#feedback_complete_form .feedback-item-multichoice.multichoice-vertical .felement span label {
+    width: 20px;
+    height: 20px;
+}
+
+#feedback_complete_form .feedback-item-multichoice .felement,
+#feedback_complete_form .feedback-item-multichoicerated .felement {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+#feedback_complete_form .fitem > fieldset > legend .legend {
+    color: var(--Blanco, #FFF);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#feedback_complete_form .feedback-item-multichoice .felement .fradio-content,
+#feedback_complete_form .feedback-item-multichoicerated .felement .fradio-content {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    padding: 1px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+#feedback_complete_form .feedback-item-multichoice .felement .fradio-content label,
+#feedback_complete_form .feedback-item-multichoicerated .felement .fradio-content label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF80;
+    margin-right: 10px;
+    color: #FFFFFFB2;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+#feedback_complete_form .feedback-item-multichoice .felement .fradio-content input,
+#feedback_complete_form .feedback-item-multichoicerated .felement .fradio-content input {
+    display: none;
+}
+
+#feedback_complete_form .feedback-item-multichoice .felement .fradio-content input:checked + label,
+#feedback_complete_form .feedback-item-multichoicerated .felement .fradio-content input:checked + label {
+    background-image: linear-gradient(#2BB673, #99CCFF);
+    /*color: var(--Azul-1, #0C065C);*/
+    color: #FFF;
+}
+
+#feedback_complete_form .feedback-item-textarea,
+#feedback_complete_form .feedback-item-textfield,
+#feedback_complete_form .feedback-item-numeric {
+    display: flex;
+    padding: 0px 36px;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border: 0 !important;
+}
+
+#feedback_complete_form .feedback-item-textarea .fitemtitle label,
+#feedback_complete_form .feedback-item-textfield .fitemtitle label,
+#feedback_complete_form .feedback-item-numeric .fitemtitle label {
+    color: var(--Blanco, #FFF);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#feedback_complete_form .feedback-item-textarea .ftextarea textarea,
+#feedback_complete_form .feedback-item-textfield .ftext input,
+#feedback_complete_form .feedback-item-numeric .ftext input {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.50) !important;
+    resize: none;
+    background: transparent;
+    color: #FFF;
+}
+
+#feedback_complete_form .feedback-item-textarea .ftextarea textarea:focus {
+    background: transparent;
+    color: #FFF;
+}
+
+#feedback_complete_form .fitem_actionbuttons .felement {
+    display: flex;
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+#feedback_complete_form .fitem_actionbuttons .felement input {
+    border-radius: 4px;
+    background: var(--Blanco, #FFF);
+    color: rgba(20, 10, 154, 1);
+}
+
+#feedback_complete_form > div:nth-child(3) > div.felement.fstatic > div > div > p:nth-child(1) > b {
+    color: var(--Text-Light-Primary, #FFF);
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58.337px; /* 162.048% */
+}
+
+#feedback_complete_form > div:nth-child(3) > div.felement.fstatic > div > div {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    align-self: stretch;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.50);
+    text-overflow: ellipsis;
+    font-family: Roboto;
+    font-size: 15.259px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.888px; /* 150% */
+}
+
+.continuebutton input {
+    padding: 8px 12px;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--White, #FFF);
+    color: var(--Azul-PINCIPAL, #140A9A);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    list-style: none;
+    cursor: pointer;
+}
+
+/**End Mod feedback**/
+
+#feedback_edit_form .itemactions .menubar li a {
+    color: #ff4848;
+}
+
+#showentryanontable tbody tr {
+    background-color: transparent;
+}
+
+
+@media (max-width: 720px) {
+    .courseflix-feedback-title-container h1 {
+        font-size: 25px !important;
+    }
+}
